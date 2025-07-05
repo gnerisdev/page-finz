@@ -298,11 +298,11 @@ header.custom-scroll .eFPWSt {
 
 #car-hero {
   position: absolute;
-  top: -15px;
+  top: 14spx;
   left: 0;
   height: 56px;
   width: auto;
-filter: grayscale(100%) brightness(1.4);
+  filter: brightness(0) saturate(100%) invert(38%) sepia(90%) saturate(718%) hue-rotate(175deg) brightness(92%) contrast(81%);
   animation: car 90s linear infinite;
   z-index: 1;
 }
@@ -313,10 +313,10 @@ filter: grayscale(100%) brightness(1.4);
     opacity: 0;
   }
   2% {
-    opacity: 0.7;
+    opacity: 1;
   }
   48% {
-    opacity: 0.7;
+    opacity: 1;
   }
   50% {
     transform: translateX(calc(100vw - 100px)) scaleX(1);
@@ -327,10 +327,10 @@ filter: grayscale(100%) brightness(1.4);
     opacity: 0;
   }
   52% {
-    opacity: 0.7;
+    opacity: 1;
   }
   98% {
-    opacity: 0.7;
+    opacity: 1;
   }
   100% {
     transform: translateX(0) scaleX(-1);
