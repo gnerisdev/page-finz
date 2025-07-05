@@ -5,6 +5,7 @@
 /* Header */
 header {
   height: 70px !important;
+  border-bottom: none;
 }
 @media (min-width: 1125px) {
   header {
@@ -16,7 +17,7 @@ header.custom-scroll {
   height: 70px !important;
   background: #fff !important;
   border-bottom: 1px solid rgb(218, 218, 218);
-  transition: height 0.3s ease, background 0.9s ease;
+  transition: height 0.2s ease;
 }
 
 header.custom-scroll .logo {
@@ -80,10 +81,22 @@ header.custom-scroll .eFPWSt {
   height: 34px !important;
 }
 
+/* Main */
+@media(min-width: 768px) {
+    main#main-content {
+      padding-top: 120px;
+    }
+}
+
+@media(min-width: 1025px) {
+    main#main-content {
+      padding-top: 120px;
+    }
+}
 /* Section Hero */
 .hero {
   text-align: center;
-  padding: 32px 20px 0;
+  padding: 32px 0;
   position: relative;
   background-color: #fff;
   overflow: hidden;
@@ -95,7 +108,7 @@ header.custom-scroll .eFPWSt {
 }
 @media (min-width: 1125px) {
   .hero {
-    padding: 60px 20px 0;
+    padding: 60px 0;
   }
 }
 
@@ -133,12 +146,11 @@ header.custom-scroll .eFPWSt {
 
 .hero__background {
   display: flex;
-  position: absolute;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   overflow: hidden;
-  bottom: 0;
-  top: 48%;
+  margin-top: -18%;
 }
 @media (min-width: 1125px) {
   .hero__background {
@@ -146,59 +158,11 @@ header.custom-scroll .eFPWSt {
   }
 }
 
-.hero__background .left {
-  top: 30%;
+.hero__background img {
   height: 100%;
-  z-index: 0;
-  display: flex;
-  /* overflow: hidden; */
+  width: 100%;
 }
 
-.hero-img-car {
-  display: flex;
-  position: absolute;
-  top: 260px;
-  height: auto;
-}
-
-.hero__background .rigth {
-  top: 30%;
-  height: 100%;
-  z-index: 0;
-  display: flex;
-}
-
-.hero__background .left img:nth-child(2) {
-  position: absolute;
-  bottom: 31px;
-}
-
-.hero__background-image--left {
-  left: -5%;
-  max-width: 45%;
-}
-
-.hero__background-image--right {
-  right: -5%;
-  max-width: 45%;
-}
-
-.hero-img-car {
-  position: absolute;
-  bottom: 31px;
-  /* width: 615px; 
-  height: 471px; */
-}
-
-#svg-car {
-  animation: floatUpDown 3s ease-in-out infinite;
-  transform-origin: 50% 100%;
-  transform-box: fill-box;
-}
-@keyframes floatUpDown {
- 0%, 100% { transform: translateX(0) translateY(0); }
-  50% { transform: translateX(0) translateY(-8px); }
-}
 
 .hero__text {
   text-wrap: auto !important;
@@ -295,7 +259,7 @@ header.custom-scroll .eFPWSt {
   height: 48px;
   opacity: 0.06;
   position: absolute;
-  animation: cloud-move 340s linear infinite;
+  animation: cloud-move 240s linear infinite;
 }
 
 #cloud-animation img:nth-child(1) {
@@ -328,10 +292,51 @@ header.custom-scroll .eFPWSt {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(120vw);
+    transform: translateX(100vw);
   }
 }
 
+#car-hero {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  height: 56px;
+  width: auto;
+filter: grayscale(100%) brightness(1.4);
+  animation: car 90s linear infinite;
+  z-index: 1;
+}
+
+@keyframes car {
+  0% {
+    transform: translateX(0) scaleX(1);
+    opacity: 0;
+  }
+  2% {
+    opacity: 0.7;
+  }
+  48% {
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(calc(100vw - 100px)) scaleX(1);
+    opacity: 0;
+  }
+  51% {
+    transform: translateX(calc(100vw - 100px)) scaleX(-1);
+    opacity: 0;
+  }
+  52% {
+    opacity: 0.7;
+  }
+  98% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(0) scaleX(-1);
+    opacity: 0;
+  }
+}
 
 .hero .wrapper-buttons {
   display: flex;
@@ -359,18 +364,19 @@ header.custom-scroll .eFPWSt {
   align-items: center;
 }
 
-#section-como-funciona ul {
-  
-}
-
 #section-como-funciona ul li {
-  position: relative;
+  position: relative; 
   padding-left: 1.5em;
   list-style: none;
   margin-bottom: 0.5em;
   text-align: start;
   font-size: 2rem;
   font-family: var(--main-font-family);
+  white-space: nowrap; 
+  width: fit-content;
+  padding-bottom: 5px; 
+  margin-bottom: 10px;
+  position: relative; overflow: hidden;
 }
 
 #section-como-funciona ul li::before {
@@ -380,22 +386,25 @@ header.custom-scroll .eFPWSt {
   top: 0;
   font-size: 1.2em;
   color: var(--primary-color);
-  animation: pulse 1.5s infinite ease-in-out;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.4);
-    opacity: 0.6;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+#animation-list li span {
+  position: relative;
+}
+
+#animation-list li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px; 
+  background-color: var(--primary-color);
+  transition: width 2s ease-in-out; 
+}
+
+#animation-list li.animate::after {
+  width: 100%;
 }
 
 /*  */
