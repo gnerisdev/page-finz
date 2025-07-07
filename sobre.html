@@ -1,3 +1,7 @@
+<?php
+/* Template Name: Sobre */
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -19,8 +23,42 @@
     />
     <link 
       rel="stylesheet" 
-      href="./assets/css/home.css" 
+      href="./assets/css/sobre.css" 
     >
+
+    <style>
+      .sc-dlfnbm.hUilbz {
+        margin: auto;
+      }
+
+      .sc-dlfnbm.hUilbz section {
+        max-width: 800px;
+      }
+
+
+      #section-sobre p {
+        text-align: justify; 
+        text-align-last: center; 
+        hyphens: auto;
+        margin: 12px 0;
+      }
+
+      .checklist {
+        justify-content: left;
+        grid-template-columns: 1fr;
+      }
+
+      .checklist .item {
+        padding: 12px;
+      }
+
+      #section-atuacao p {
+        text-align: justify; 
+        text-align-last: center; 
+        hyphens: auto;
+        margin: 12px 0;
+      }
+    </style>
   </head>
 
   <body style="overflow-x: hidden;">
@@ -89,7 +127,7 @@
             <div class="sc-dlfnbm sc-hKgILt sc-gbkRTH cWMrUO hPiBWL fblxkw">
               <a
                 class="sc-jNMdTA sc-d98de5f3-0 ucyLk iTsFZR sc-e3cf1f21-6 gxDWLU"
-                href="/sobre.html"
+                href="/sobre"
                 style="width: 100%; height: auto; padding: 9px 16px; font-size: 1.4rem !important;"
               >
                 Sobre nós
@@ -116,17 +154,14 @@
             <section class="hero">
               <div class="hero__content">
                 <h1 class="sc-54d9f4b-2 sc-30d4cc2b-5 gQbYMf bgWkHb hero__title">
-                  Proteger devia ser fácil. A Fynz fez ser!
+                  Sobre a Fynz
                 </h1>
                 <p class="sc-54d9f4b-4 gewRil hero__text">
                   Não vendemos seguro, ensinamos você a contratar. Simples, direto e do seu jeito.
                 </p>
                 <div class="wrapper-buttons">
-                  <a href="fynz_hero_button_1_link', '/" class="sc-jNMdTA sc-d98de5f3-0 ucyLk iTsFZR sc-e3cf1f21-6 gxDWLU">
-                    Simular agora
-                  </a>
-                  <a href="fynz_hero_button_2_link', '/" class="sc-jNMdTA sc-d98de5f3-0 ucyLk iTsFZR sc-e3cf1f21-6 gxDWLU">
-                    Falar com Especialista
+                  <a style="" href="<?php echo esc_url( get_theme_mod( 'fynz_hero_button_2_link', '/' ) ); ?>" class="sc-jNMdTA sc-d98de5f3-0 ucyLk iTsFZR sc-e3cf1f21-6 gxDWLU">
+                    Fale Conosco
                   </a>
                 </div>
               </div>
@@ -151,166 +186,150 @@
                   <img
                     aria-hidden="true"
                     decoding="async"
-                    src="./assets/img/hero-background.svg"
+                    src="./assets/img/banner-sobre.svg"
                   >
-                  <div style="position: relative;">
-                      <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="./assets/img/car2.gif"
-                        id="car-hero"
-                      >
-                      <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="./assets/img/hero-background-bottom.svg"
-                      >
-                  </div>
                 </div>
               </div>
             </section>
 
-            <section
-              class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-ec74c623-1 krOXYT chrFRT dFtnhU iazvNN"
-              data-aos="fade-in"
-              data-aos-duration="1000"
-              id="section-como-funciona"
-            >
-              <h2 class="sc-54d9f4b-3 sc-39e5bffd-0 fpapqm iSrFZd">
-                Como funciona: <br >
-                Do seu jeito, com ou sem ajuda!
-              </h2>
+            <div class="sc-dlfnbm hUilbz">
+              <section id="section-sobre" 
+                class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-dc9d6dfb-1 bmZLvQ chrFRT dFtnhU cvqYWE"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-once="true"
+              >
 
-              <div class="content">
-                <ul id="animation-list">
-                  <li data-aos="fade-right" data-aos-delay="0">Simule em minutos.</li>
-                  <li data-aos="fade-right" data-aos-delay="150">Compare sem viés.</li>
-                  <li data-aos="fade-right" data-aos-delay="300">Contrate direto.</li>
-                  <li data-aos="fade-right" data-aos-delay="450">Fale com um especialista se quiser.</li>
-                </ul>
+                <h2 class="sc-54d9f4b-3 sc-e3cf1f21-2 fpapqm kXfTiV"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="800"
+                >
+                  Sobre nós
+                </h2>
 
-                <script>
-                  document.addEventListener('DOMContentLoaded', function() {
-                  const listItems = document.querySelectorAll('#animation-list li');
-                  let index = 0;
+                <p class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                >
+                  No mercado de seguros brasileiro, os clientes enfrentam desafios significativos 
+                  na hora de entender e adquirir produtos de seguros. Atualmente, os clientes 
+                  dependem fortemente de corretores de seguros para explicar as soluções, fornecer 
+                  orçamentos e orientá-los durante o processo de fechamento. Essa dependência cria 
+                  uma experiência demorada e, muitas vezes, frustrante para os clientes, especialmente 
+                  em um cenário de negócios cada vez mais digital. 
+                </p>
 
-                  function animateItem() {
-                    if (index < listItems.length) {
-                      listItems.forEach(item => item.classList.remove('animate')); 
-                      listItems [index].classList.add('animate'); 
-                      index++;
-                      setTimeout(animateItem, 4000); 
-                    } else {
-                      index = 0; 
-                      setTimeout(animateItem, 4000);
-                    }
-                  }
+                <p class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                  data-aos-duration="800"
+                >
+                  Com sócios com mais de 10 anos de mercado, a Fynz visa solucionar esse problema, 
+                  revolucionando o setor de seguros por meio da educação e da inovação digital. A empresa 
+                  reconhece que os clientes têm dificuldades com decisões básicas sobre seguros, como 
+                  determinar se podem reduzir seus custos com seguro saúde, entender como o seguro de carro 
+                  impacta suas decisões de compra de veículos ou avaliar a qualidade de sua cobertura de 
+                  seguro de vida. Ao fornecer uma plataforma digital que oferece informações básicas e permite 
+                  que os clientes naveguem e pesquisem opções de seguro de forma independente, a Fynz atende a 
+                  uma necessidade crítica de educação e capacitação acessíveis em seguros.
+                </p>
+              </section>
+            </div>
 
-                  animateItem();
-                });
-                </script>
+            <div cclass="sc-dlfnbm hUilbz">
+              <section
+                overflow="hidden"
+                class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-22ad05c0-1 OnArS chrFRT foXEwJ cPjBar"
+              >
+                <h2 tabindex="0" class="sc-54d9f4b-3 fpapqm">
+                  Por que a Fynz é necessária?
+                </h2>
 
-                <dotlottie-player
-                  src="https://lottie.host/d95aff31-2b1e-406a-9f75-ea2ef2d7a4f6/IHFW1GkqSx.lottie"
-                  background="transparent"
-                  speed="1"
-                  style="height: 300px; filter: grayscale(100%);"
-                  loop
-                  autoplay
-                ></dotlottie-player>
-              </div>
-            </section>
+                <br>
 
-            <div class="sc-dlfnbm cWMrUO">
-              <section class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-39e5bffd-3 coOpWf chrFRT foXEwJ fwdQVG">
-                <div class="sc-39e5bffd-2 ddZgjl"></div>
-                <div width="100%" class="sc-dlfnbm sc-hKgILt gdEqnR bPFemn">
-                  <h2 class="sc-54d9f4b-3 sc-39e5bffd-0 fpapqm iSrFZd">Por que a Fynz?</h2>
-
-                  <p class="sc-54d9f4b-4 sc-39e5bffd-1 gewRil eYyymE" style="max-width: 700px;">
-                    A Fynz não ganha comissão pra te vender qualquer coisa. A
-                    gente ganha quando você entende o que está fazendo — e
-                    escolhe ficar com a gente.
+                <div class="sc-dlfnbm hUilbz">
+                  <p class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK">
+                    O problema que a Fynz está resolvendo vai além das frustrações individuais dos clientes. 
+                    Nos Estados Unidos, 34% dos contratos de seguro são iniciados online, enquanto no Brasil 
+                    esse número é inferior a 1%. Esse contraste gritante destaca uma oportunidade de mercado 
+                    significativa e a necessidade de uma empresa como a Fynz desmistificar o processo de 
+                    seguros para os consumidores brasileiros.
                   </p>
+                </div>
+                                
+                <div style="max-width: 800px; display: grid" class="sc-dlfnbm sc-hKgILt sc-5c0e759e-0 cWMrUO chrFRT kovtOE wrapper-checklist">
+                  <h3 style="font-size: 1.8rem; font-weight: 800; text-align: center; margin: -12px 0 8px;">
+                    Ao resolver esse problema, a Fynz tem o potencial de:
+                  </h3>
 
-                  <div class="sc-dlfnbm sc-hKgILt sc-55636dc4-0 jIuwpq kIPpjk hUBpbV">
-                    <div class="sc-dlfnbm sc-55636dc4-1 cWMrUO kyQzZW">
-                      <div class="sc-dlfnbm sc-hKgILt sc-55636dc4-2 cWMrUO chrFRT iKYVbn"></div>
+                  <div class="checklist">
+                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-right" data-aos-delay="0">
+                      <p>Aumentar as taxas de adoção de seguros no Brasil.</p>
+                    </div>
+
+                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-left" data-aos-delay="100">
+                      <p>Melhorar a compreensão e a confiança do cliente nos produtos de seguros.</p>
+                    </div>
+
+                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-right" data-aos-delay="200">
+                      <p>Simplificar o processo de compra de seguros.</p>
+                    </div>
+
+                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-left" data-aos-delay="300">
+                      <p>Reduzir a dependência dos modelos tradicionais de corretores.</p>
+                    </div>
+
+                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-right" data-aos-delay="400">
+                      <p>Impulsionar o crescimento do mercado e a inovação no setor de seguros.</p>
                     </div>
                   </div>
                 </div>
               </section>
             </div>
             
-            <div class="sc-dlfnbm cWMrUO">
-              <section class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-dc9d6dfb-1 bmZLvQ chrFRT dFtnhU cvqYWE">
-                <h2 class="sc-54d9f4b-3 sc-e3cf1f21-2 fpapqm kXfTiV">
-                  Soluções inteligentes para sua proteção
-                </h2>
-                <ul id="lista-produto" class="sc-dc9d6dfb-0 iXTzFz"> </ul>
-              </section>
-            </div>
-
-            <div class="sc-dlfnbm cWMrUO">
-              <section
-                overflow="hidden"
-                class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-22ad05c0-1 OnArS chrFRT foXEwJ cPjBar"
+            <div class="sc-dlfnbm hUilbz">
+              <section id="section-atuacao" 
+                class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-a1732406-5 bmZLvQ chrFRT dFtnhU ktvVmI"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-once="true"
               >
-                <h2 tabindex="0" class="sc-54d9f4b-3 fpapqm">Já tem seguro? A Fynz te ajuda!</h2>
-                  <div class="sc-dlfnbm hUilbz">
-                  <p class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK">
-                    Por que revisar seu seguro é uma escolha inteligente:
-                  </p>
-                </div>
-                                
-                <div class="sc-dlfnbm sc-hKgILt sc-5c0e759e-0 cWMrUO chrFRT kovtOE wrapper-checklist">
-                   <div class="checklist">
-                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-right" data-aos-delay="0">
-                      <p>Sua vida muda. Seu seguro também deveria.</p>
-                    </div>
-                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-left" data-aos-delay="100">
-                      <p>O mercado evolui. Sua apólice pode estar parada.</p>
-                    </div>
-                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-right" data-aos-delay="200">
-                      <p>Lacunas escondidas custam caro.</p>
-                    </div>
-                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-left" data-aos-delay="300">
-                      <p>Seu estilo de vida mudou? Seu preço pode mudar também.</p>
-                    </div>
-                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-right" data-aos-delay="400">
-                      <p>Surpresas não combinam com seguros.</p>
-                    </div>
-                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-left" data-aos-delay="500">
-                      <p>Surpresas não combinam com seguros.</p>
-                    </div>
-                     <div class="check-list-button" data-aos="fade-left" data-aos-delay="500">
-                      <a href="/onboarding/start">
-                        Revisar meu seguro
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="31,15 48,32 31,49 "></polyline> </g> <g> <polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="16,15 33,32 16,49 "></polyline> </g> </g></svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
 
-            <div class="sc-dlfnbm cWMrUO">
-              <section style="padding-bottom: 0" class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-a1732406-5 bmZLvQ chrFRT dFtnhU ktvVmI">
-                <h2 class="sc-54d9f4b-3 sc-a1732406-0 fpapqm euHqSx">Por que a Fynz é diferente?</h2>
+                <h2 class="sc-54d9f4b-3 sc-a1732406-0 fpapqm euHqSx"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="800"
+                >
+                  Atuação Estratégica da Fynz
+                </h2>
 
-                <p class="sc-54d9f4b-4 sc-a1732406-1 gewRil gSUlmM" style="max-width: 700px">
-                  No mercado tradicional, muitos focam em vender produtos específicos. 
-                  Na Fynz, nossa abordagem é centrada em você.
+                <p class="sc-54d9f4b-4 sc-a1732406-1 gewRil gSUlmM"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                >
+                  Por meio de cinco unidades de negócios — Essenzia (varejo B2C), Vizion (networking B2C e B2B), 
+                  Digital (plataforma de multicálculo online), Corporate (soluções B2B para pequenas e médias 
+                  empresas) e Partnerships (colaborações com empresas de investimento, escritórios de advocacia 
+                  e contabilidade) — a Fynz está estrategicamente posicionada para abordar diversos pontos do 
+                  mercado de seguros.
+
+                  Com soluções práticas, ágeis e eficazes, a Fynz transforma a forma como os brasileiros se 
+                  relacionam com seguros, promovendo uma base de consumidores mais informada, confiável e 
+                  protegida.
                 </p>
 
-                <dotlottie-player
-                  src="https://lottie.host/487667aa-ab07-4f37-9891-327fa8df0f69/6CAG6lfbdz.lottie"
-                  background="transparent"
-                  speed="1"
-                  style="height: 50vh; filter: grayscale(100%)"
-                  loop
-                  autoplay
-                ></dotlottie-player>
+                <img 
+                  src="./assets/img/logo-fynz-01.png" 
+                  aria-hidden="true"
+                  style="max-height: 140px; margin-top: 60px"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                  data-aos-duration="800"
+                  class="pulsing"
+                >
               </section>
             </div>
           </main>
@@ -438,7 +457,7 @@
       </div>
     </div>
 
- <style>
+  <style>
 .btn-whatsapp-pulse {
   background: #25d366;
   color: white;
@@ -512,6 +531,7 @@
   </svg>
 </a>
 
+
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="./assets/js/global.js"></script>
 
@@ -519,185 +539,12 @@
     <script>
       AOS.init({ once: false });
 
-      document.addEventListener('DOMContentLoaded', function () {
-        const feedbacks = [
-          {
-            name: "Sofia Alves",
-            username: "@sofia_alves_",
-            photoUrl: "https://randomuser.me/api/portraits/women/11.jpg",
-            text: "Nunca pensei que entender de seguros seria tão fácil! A <span class='primary'>Fynz</span> realmente cumpre o que promete: simplicidade e clareza. Amei!"
-          },
-          {
-            name: "Lucas Pereira",
-            username: "@lucas_p_tech",
-            photoUrl: "https://randomuser.me/api/portraits/men/12.jpg",
-            text: "Revisar meu seguro com a <span class='primary'>Fynz</span> foi a melhor decisão. Descobri que pagava mais por menos. Agora estou super bem protegido e economizando! #Fynz"
-          },
-          {
-            name: "Camila Mendes",
-            username: "@cami_mendes",
-            photoUrl: "https://randomuser.me/api/portraits/women/13.jpg",
-            text: "O atendimento do especialista da <span class='primary'>Fynz</span> foi impecável. Tirou todas as minhas dúvidas sobre plano de saúde. Sinto que fiz a escolha certa para minha família."
-          },
-          {
-            name: "Diego Farias",
-            username: "@diego_farias_eng",
-            photoUrl: "https://randomuser.me/api/portraits/men/14.jpg",
-            text: "A transparência da <span class='primary'>Fynz</span> é algo raro no mercado. Me ajudaram a entender o consórcio sem pressão para fechar. Recomendo para quem busca honestidade."
-          },
-          {
-            name: "Patrícia Lima",
-            username: "@patricia_lima",
-            photoUrl: "https://randomuser.me/api/portraits/women/15.jpg",
-            text: "Minha vida mudou e meu seguro precisava acompanhar. A <span class='primary'>Fynz</span> me mostrou o quanto era importante atualizar. Processo rápido e sem burocracia."
-          },
-          {
-            name: "Gustavo Rocha",
-            username: "@guga_rocha",
-            photoUrl: "https://randomuser.me/api/portraits/men/16.jpg",
-            text: "A plataforma da <span class='primary'>Fynz</span> é sensacional para comparar seguros. Sem viés, sem pressão, só informações claras para eu decidir. Parabéns pela iniciativa!"
-          },
-          {
-            name: "Débora Costa",
-            username: "@deb_costa",
-            photoUrl: "https://randomuser.me/api/portraits/women/17.jpg",
-            text: "Nunca me senti tão segura ao contratar um seguro. A <span class='primary'>Fynz</span> me deu todo o conhecimento necessário. Recomendo para todos que buscam tranquilidade e informação."
-          },
-          {
-            name: "Rafael Menezes",
-            username: "@rafa_menezes_rj",
-            photoUrl: "https://randomuser.me/api/portraits/men/18.jpg",
-            text: "A Fynz é o futuro dos seguros. Sem letras miúdas, sem surpresas. Meu seguro de responsabilidade civil foi super bem explicado, agora sei o que estou contratando."
-          },
-          {
-            name: "Carla Oliveira",
-            username: "@carla_oli",
-            photoUrl: "https://randomuser.me/api/portraits/women/19.jpg",
-            text: "A revisão do meu seguro com a <span class='primary'>Fynz</span> revelou várias lacunas que eu nem imaginava. Agora tenho uma apólice que realmente me protege. Essencial!"
-          },
-          {
-            name: "Felipe Nunes",
-            username: "@felipe_nunes_",
-            photoUrl: "https://randomuser.me/api/portraits/men/20.jpg",
-            text: "Simples, direto e do seu jeito. A <span class='primary'>Fynz</span> realmente entrega essa promessa. Contratar seguro ficou fácil de verdade! #ProtecaoFynz"
-          }
-        ];
-
-        const products = [
-          {
-            name: " Vida",
-            description: "Mais do que deixar algo pra alguém. É garantir que nada te pare.",
-            img: "health-svgrepo-com.svg",
-            link: "/onboarding/start?p=home_us_vida"
-          },
-          {
-            name: "Plano de Saúde",
-            description: "Cuidar da saúde é o novo relacionamento sério.",
-            img: "checkup-doctor-health-healthcare-hospital-medical-svgrepo-com.svg",
-            link: "/onboarding/start?p=home_us_plano_saude"
-          },
-          {
-            name: "Consórcio",
-            description: "Nem tudo precisa ser agora. Mas precisa ser possível.",
-            img: "deal-done-partnership-agreement-svgrepo-com.svg",
-            link: "/onboarding/start?p=home_us_consorcio"
-          },
-          {
-            name: "Responsabilidade Civil",
-            description: "A justiça não vê só o que foi feito. Ela considera o que foi sentido.",
-            img: "insurance-protection-safety-svgrepo-com.svg",
-            link: "/onboarding/start?p=home_us_responsabilidade_civil"
-          },
-          {
-            name: "Outros",
-            description: "Se é importante para você, a gente protege. E sem complicar.",
-            img: "car-svgrepo-com.svg",
-            link: "/onboarding/start?p=home_us_responsabilidade_civil"
-          },
-        ];
-
-        const targetElement = document.querySelector('.sc-55636dc4-2');
-        const productList = document.querySelector('#lista-produto');
-
-        // Add feedbacks with AOS animation
-        [...feedbacks, ...feedbacks].forEach((feedback, index) => {
-          const feedbackDiv = document.createElement('div');
-          feedbackDiv.innerHTML = `
-            <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
-              <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
-                <img
-                  alt="${feedback.name}" loading="lazy" width="100" height="100" decoding="async"
-                  class="sc-929dd2a3-1 gMrLqq"
-                  src="${feedback.photoUrl}"
-                />
-                <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
-                  <p class="sc-929dd2a3-2 fpqtPF">${feedback.name}</p>
-                  <p class="sc-929dd2a3-3 fPFuRr">${feedback.username}</p>
-                </div>
-              </div>
-                <p class="sc-929dd2a3-4 gFsfCu">${feedback.text}</p>
-            </div>
-          `;
-          targetElement.appendChild(feedbackDiv);
-        });
-
-        // Add products with AOS animation
-        if (productList) {
-          products.forEach((product, index) => {
-            const productItem = document.createElement('li');
-            productItem.setAttribute('style', 'justify-content: space-between;');
-            productItem.setAttribute('tabindex', '0');
-            productItem.classList.add('sc-dlfnbm', 'sc-hKgILt', 'sc-e3cf1f21-0', 'cWMrUO', 'chrFRT', 'hDRqOu');
-            productItem.setAttribute('data-aos', 'fade-up');
-            productItem.setAttribute('data-aos-delay', (index * 200).toString()); 
-            productItem.innerHTML = `
-              <img
-                aria-hidden="true"
-                alt="${product.name}"
-                loading="lazy"
-                width="150"
-                height="150"
-                decoding="async"
-                data-nimg="1"
-                class="sc-3524474a-2 hOVqDd"
-                style="color: transparent; filter: grayscale(100%);"
-                src="./assets/img/${product.img}"
-              />
-              <img
-                aria-hidden="true"
-                alt="${product.name}"
-                loading="lazy"
-                width="106"
-                height="106"
-                decoding="async"
-                data-nimg="1"
-                class="sc-3524474a-3 cexTqw"
-                style="color: transparent; filter: grayscale(100%);"
-                src="./assets/img/${product.img}"
-              />
-              <span class="sc-e3cf1f21-3 sc-3524474a-0 iucpwW fWQlyv">${product.name}</span>
-              <span class="sc-e3cf1f21-4 sc-3524474a-1 jtIOEh msOlO">
-                ${product.description.replace(/\n/g, '<br />')}
-              </span>
-              <span class="sc-3524474a-4 hWsqzn">
-                <span display="none,block" class="sc-dlfnbm sc-3524474a-5 bSTlr">
-                  <a href="${product.link}" class="sc-jNMdTA sc-d98de5f3-0 ucyLk iTsFZR sc-e3cf1f21-6 gxDWLU">
-                    Saiba Mais
-                  </a>
-                </span>
-              </span>
-            `;
-            productList.appendChild(productItem);
-          });
-        }
-      });
-
       // Animação
       const bird = document.getElementById('bird-fly-animation');
 
       function setRandomTop() {
-        const min = 50; 
-        const max = window.innerHeight - 150; 
+        const min = 50;  // altura mínima
+        const max = window.innerHeight - 150; // evita sair da tela
         const randomTop = Math.floor(Math.random() * (max - min + 1)) + min;
         bird.style.top = randomTop + 'px';
       }
