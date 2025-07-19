@@ -1,216 +1,101 @@
-* {
-  white-space: normal !important;
-}
-
-/* Header */
-header {
-  height: 70px !important;
-  border-bottom: none;
-}
-@media (min-width: 1125px) {
-  header {
-    height: 110px !important;
-  }
-}
-
-header.custom-scroll {
-  height: 70px !important;
-  background: #fff !important;
-  border-bottom: 1px solid rgb(218, 218, 218);
-  transition: height 0.2s ease;
-}
-
-header.custom-scroll .logo {
-  height: 38px;
-}
-
-header .logo {
-  height: 44px;
-  opacity: 0.8;
-}
-
-@media (min-width: 1246px) {
-  header.custom-scroll .logo-center {
-    display: none;
-  }
-}
-
-header .logo-right {
-  display: none;
-  position: static;
-}
-
-@media (min-width: 1246px) {
-  header.custom-scroll .logo-right {
-    display: block;
-  }
-}
-
-@media (min-width: 1125px) {
-  header .eFPWSt {
-    top: 80%;
-    transform: translate(-50%, -50%);
-    height: auto !important;
-  }
-}
-
-header.custom-scroll .eFPWSt {
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.header-right {
-  display: flex;
-}
-
-.wrapper-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.wrapper-right .sobre {
-  height: 34px !important;
-  display: flex !important;
-  align-items: center !important;
-  padding: 8px 16px !important;
-  font-size: 1.4rem !important;
-}
-
-.wrapper-right .logo {
-  height: 34px !important;
-}
+@import url(global.css);
 
 /* Main */
 @media(min-width: 768px) {
-    main#main-content {
-      padding-top: 120px;
-    }
-}
-
-@media(min-width: 1025px) {
-    main#main-content {
-      padding-top: 120px;
-    }
-}
-/* Section Hero */
-.hero {
-  text-align: center;
-  padding: 32px 0;
-  position: relative;
-  background-color: #fff;
-  overflow: hidden;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-}
-@media (min-width: 1125px) {
-  .hero {
-    padding: 60px 0;
+  main#main-content {
+    padding-top: 0;
   }
 }
 
-.hero__content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  max-width: 700px;
-  gap: 2rem;
+/* Section Hero */
+.section-hero {
+  height: 100vh;
 }
 
-.hero__title {
+.section-hero__background {
+  height: calc(100% - 70px);
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .section-hero__background {
+    height: 100%;
+  }
+}
+
+.section-hero__content {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 440px;
+  padding: 0 16px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .section-hero__content {
+    max-width: 580px;
+  }
+}
+
+.section-hero__content img {
+  height: 44px;
+  margin: auto;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .section-hero__content img{
+    max-width: 580px;
+  }
+}
+
+.custom-scroll .section-hero__content img {
+  visibility: hidden;
+}
+
+.section-hero__content p {
+  text-wrap: auto;
+}
+
+.section-hero__wrapper-buttons {
+  display: flex;
+  gap: 12px;
+  padding: 16px 0px;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap
+}
+
+.section-hero__wrapper-buttons a {
+  width: fit-content !important;
+  min-width: 240px;
+}
+
+.section-hero__wrapper-buttons a:first-child {
+  background: #fa821e;
+  box-shadow: 0px 10px 40px -10px rgba(250, 130, 30, 0.5);
+}
+
+.section-hero__title {
   margin-top: 0;
   margin-bottom: 15px;
   line-height: 1.2;
   font-weight: 400;
-  text-wrap: balance;
+  text-wrap: auto;
   font-size: 3rem;
 }
 @media (min-width: 600px) {
-  .hero__title {
+  .section-hero__title {
     font-size: 3.6rem;
   }
 }
 @media (min-width: 768px) {
-  .hero__title {
-    font-size: 5.5rem;
+  .section-hero__title {
+    font-size: 4.6rem;
     text-wrap: auto;
-  }
-}
-
-.hero__content .global-text {
-  text-wrap: norlmal;
-}
-
-.hero__background {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  overflow: hidden;
-  margin-top: -18%;
-}
-@media (min-width: 1125px) {
-  .hero__background {
-    top: initial;
-  }
-}
-
-.hero__background img {
-  height: 100%;
-  width: 100%;
-}
-
-
-.hero__text {
-  text-wrap: auto !important;
-  max-width: 400px;
-  margin: auto;
-  text-align: center;
-}
-
-.experts__button {
-  font-size: 1.8rem;
-  padding: 20px;
-  line-height: 1.5;
-  margin-bottom: 40px;
-}
-
-.hero__button {
-  margin-top: 6rem;
-  font-size: 1.8rem;
-  padding: 20px 44px;
-}
-
-@media (max-width: 768px) {
-  .button {
-    padding: 12px 24px;
-    font-size: 14px;
-  }
-
-  .hero__background-image {
-    max-height: 50%;
-  }
-
-  .hero__background-image--left,
-  .hero__background-image--right {
-    max-width: 50%;
-  }
-
-  .hero__background-image--left {
-    left: -10%;
-  }
-
-  .hero__background-image--right {
-    right: -10%;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero__background-image {
-    display: none;
   }
 }
 
@@ -229,12 +114,8 @@ header.custom-scroll .eFPWSt {
     transform: translateX(0) scaleX(1);
     opacity: 0;
   }
-  2% {
-    opacity: 1;
-  }
-  48% {
-    opacity: 1;
-  }
+  2% { opacity: 1; }
+  48% { opacity: 1; }
   50% {
     transform: translateX(calc(100vw - 100px)) scaleX(1);
     opacity: 0;
@@ -243,12 +124,8 @@ header.custom-scroll .eFPWSt {
     transform: translateX(calc(100vw - 100px)) scaleX(-1);
     opacity: 0;
   }
-  52% {
-    opacity: 1;
-  }
-  98% {
-    opacity: 1;
-  }
+  52% { opacity: 1; }
+  98% { opacity: 1; }
   100% {
     transform: translateX(0) scaleX(-1);
     opacity: 0;
@@ -288,17 +165,13 @@ header.custom-scroll .eFPWSt {
 }
 
 @keyframes cloud-move {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100vw);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100vw); }
 }
 
 #car-hero {
   position: absolute;
-  top: -20px;
+  bottom: 20px;
   left: 0;
   height: 60px;
   width: auto;
@@ -338,30 +211,18 @@ header.custom-scroll .eFPWSt {
   }
 }
 
-.hero .wrapper-buttons {
-  display: flex;
-  gap: 16px;
-  padding: 32px 0px;
-  width: 100%;
-  margin: auto;
-  justify-content: center;
-}
-
-.hero .wrapper-buttons a {
-  width: fit-content !important;
-  min-width: 240px;
-}
-
-.hero .wrapper-buttons a:first-child {
-  background: #fa821e;
-  box-shadow: 0px 10px 40px -10px rgba(250, 130, 30, 0.5);
-}
-
 /* Section Como Funciona */
 #section-como-funciona .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+}
+
+@media(max-width: 768px) {
+  #section-como-funciona .content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 #section-como-funciona ul li {
@@ -412,7 +273,7 @@ header.custom-scroll .eFPWSt {
   max-width: 900px;
 }
 
-/* Section */
+/* Section Já tem seguro */
 .wrapper-checklist.kovtOE {
   height: auto !important;
   margin-top: 32px;
@@ -436,7 +297,7 @@ header.custom-scroll .eFPWSt {
 }
 
 .checklist .item {
-  background-color: #747374;
+  background-color: #2d7dc3;
   color: #fff;
   padding: 20px 25px;
   border-radius: 15px;
@@ -459,7 +320,7 @@ header.custom-scroll .eFPWSt {
 
 .checklist .check-list-button {
   min-width: 300px;
-  background-color: #2d7dc3;
+  background-color: #fa821e;
   color: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -487,4 +348,163 @@ header.custom-scroll .eFPWSt {
 .gFsfCu .primary {
   color: #fa821e !important;
   font-weight: 600;
+}
+
+/* Por que a Fynz é diferente */
+.differentiator-items {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 48px;
+}
+
+.fynz-differentiators-section {
+  padding: 60px 20px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.fynz-differentiators-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+.differentiator-item {
+  max-width: 350px;
+  min-width: 280px;
+  background: #fff;
+  padding: 8px 24px 24px;
+  border-radius: 4px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-left: 3px solid #007bff;
+  margin: 16px 24px;
+}
+
+.differentiator-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.differentiador-item__title {
+  height: 72px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.differentiator-item p {
+  text-align: justify;
+  text-align-last: center;
+  text-justify: inter-word;
+  hyphens: auto;
+  word-break: break-word;
+}
+
+.fire-text {
+  color: transparent;
+  font-weight: 500;
+  background-image: linear-gradient(
+    -45deg,
+    #fa821e,
+    #fac71e,
+    #fa821e,
+    #fac71e,
+    #fa821e
+  );
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fireFlow 3s linear infinite;
+}
+
+@keyframes fireFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Section - Como Funciona */
+.section-como-funciona img {
+  width: 100vw;
+}
+
+.section-como-funciona {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+
+}
+@media screen and (min-width: 768px) {
+  .section-como-funciona {
+    padding: 70px 0;
+  }
+}
+
+.section-como-funciona__content {
+  padding: 16px 20px 0;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50% ;
+  align-items: center;
+}
+
+.section-como-funciona__content__fogueira {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.section-como-funciona__content__fogueira svg {
+  width: auto !important;
+  height: 400px !important;
+}
+
+.section-como-funciona__content__fogueira__setas {
+  position: absolute;
+  height: 100%;
+  right: 60px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-como-funciona__content__fogueira__setas img {
+  width: 48px;
+  object-fit: contain;
+}
+
+.section-como-funciona__content__fogueira__setas img:nth-child(1) {
+  transform: translateY(48px) !important;
+}
+
+.section-como-funciona__content__fogueira__setas img:nth-child(3) {
+  transform: translateY(-56px) !important;
+}
+
+.section-como-funciona__content__articles {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-como-funciona article {
+  position: relative;
+}
+
+.section-como-funciona article strong {
+  font-weight: bold;
 }

@@ -1,0 +1,243 @@
+:root {
+  --light-pink-color: #ffe4f2;
+  --cupid-color: #FFB4DA;
+  --pink-color: #2d7dc3;
+  --dark-pink-color: #2366a0;
+  --darker-pink-color: #b40060;
+  --light-red-color: #F83157;
+  --red-color: #F7274A;
+  --dark-red-color: #EC092F;
+  --darker-red-color: #D82140;
+  --orange-color: #FFB01C;
+  --green-color: #2AD5BD;
+  --java-color: #27C7B0;
+  --caribbean-green-color: #24B8A3;
+  --blue-color: #2A76E4;
+  --dark-blue-color: #225AAF;
+  --darker-blue-color: #174991;
+  --black-color: #000000;
+  --void-color: #262626;
+  --dark-night-color: #2b2b2b;
+  --darker-night-color: #282828;
+  --darkest-night-color: #161616;
+  --gray-night-color: #524751;
+  --night-color: #4a4a4a;
+  --night-rider-color: #313131;
+  --matterhorn-color: #525252;
+  --dark-mine-shaft-color: #202020;
+  --boulder-color: #7b7b7b;
+  --dark-gray-color: #a9a9a9;
+  --dark-color: #9b9b9b;
+  --metal-color: #b7b7b7;
+  --solid-gray-color: #d8d8d8;
+  --gainsboro-color: #dbdbdb;
+  --light-color: #dadada;
+  --very-light-grey-color: #cccccc;
+  --pebble-color: #d9d9d9;
+  --alice-blue-color: #f6f7f8;
+  --snowy-color: #fcfcfc;
+  --glass-color: #ececec;
+  --mercury-color: #e7e7e7;
+  --cloud-color: #f7f7f7;
+  --pearl-color: #fdfdfd;
+  --white-color: #ffffff;
+  --gray-color: #8C8C8C;
+  --concrete-color: #f3f3f3;
+  --mine-shaft-color: #333333;
+  --alto-color: #E0E0E0;
+  --darkest-red-color: #C60442;
+  --scarlet-color: #f83157;
+  --buttercup-color: #f5a623;
+  --malachite-color: #00CB5B;
+  --listerine-color: #27D8B5;
+  --havelock-blue-color: #4a90e2;
+  --blue-gray-color: #6c87a8;
+  --blue-sky-color: #319bf5;
+  --lighter-cloud-color: #fbfbfb;
+  --orange-pill-color: #FF9900;
+  --white-smoke-color: #F5F5F5;
+  --mouse-gray-color: #9B9B9B;
+  --yellow-color: #FFE071;
+  --light-yellow-color: #fff3c7;
+  --medium-sea-color: #2ECC71;
+  --nero-color: #141414;
+  --mirage-color: #171930;
+  --ebony-clay-color: #222540;
+  --rhino-color: #2F335B;
+  --east-bay-color: #42508A;
+  --chetwode-blue-color: #92ABDC;
+  --strikemaster-color: #9E6D8F;
+  --eggplant-color: #643B5B;
+  --hemlock-color: #64583B;
+  --shadow-color: #847654;
+  --turquoise-color: #2AD5BD;
+  --polo-blue-color: #90A8D9;
+  --cotton-candy-color: #FEAED8;
+  --pastel-pink-color: #FFD1E8;
+  --tutu-color: #FFF7FB;
+  --hoki-color: #6380A3;
+  --barley-white-color: #fff3c7;
+  --blond-color: #FFE071;
+  --meteor-color: #D18313;
+  --sandy-beach-color: #FFEECE;
+  --boston-blue-color: #4391BD;
+  --zumthor-color: #EBF5FF;
+  --pippin-color: #ffe3e3;
+  --pink-lady-color: #fff2da;
+  --frosted-mint-color: #DBFFEC;
+  --eucalyptus-color: #1D9F58;
+  --lavender-blush-color: #FFEAF4;
+  --lotus-color: #824040;
+  --vivid-tangerine-color: #FF7E7E;
+  --domino-color: #928163;
+  --salomie-color: #FFDB95;
+  --falcon-color: #775570;
+  --carnation-pink-color: #FF8EC9;
+  --dove-gray-color: #666363;
+  --cutty-sark-color: #577A71;
+  --algae-green-color: #9ADFC6;
+  --ebony-color: #0F1125;
+  --cornflower-blue-color: #6195ED;
+  --anakiwa-color: #B3D9FF;
+  --angel-drop-color: #EBF5FF;
+  --blue-bayoux-color: #485F6A;
+  --fire-bush-color: #E3A831;
+  --winter-salt-color: #ADAEC2;
+  --before-nightfall-color: #9497B2;
+  --lavender-color: #6C709C;
+  --tinted-blue-color: #5A5E8C;
+  --kingly-cloud-color: #DCDCDC;
+  --pale-gray-color: #E4E4E4;
+  --pale-pink-color: #FFD9ED;
+  --light-gray-color: #DEDEDE;
+  --divider-gray-color: #797979;
+  --primary-color: #2d7dc3;
+  --dark-primary-color: #2366a0;
+  --darker-primary-color: #b40060;
+  --text-primary-color: #4a4a4a;
+  --text-secondary-color: #7b7b7b;
+  --text-tertiary-color: #9b9b9b;
+  --text-disabled-color: #b7b7b7;
+  --text-disabled-secondary-color: #dadada;
+  --text-link-color: #2d7dc3;
+  --text-link-pressed-color: #b40060;
+  --text-negative-color: #F7274A;
+  --text-positive-color: #2AD5BD;
+  --inverted-text-primary-color: #ffffff;
+  --inverted-text-secondary-color: #b7b7b7;
+  --background-primary-color: #ffffff;
+  --background-secondary-color: #f7f7f7;
+  --background-tertiary-color: #f3f3f3;
+  --background-quaternary-color: #ececec;
+  --background-disabled-color: #dadada;
+  --background-positive-color: #2AD5BD;
+  --background-positive-dark-color: #27C7B0;
+  --background-positive-darker-color: #24B8A3;
+  --background-pending-color: #FFB01C;
+  --background-negative-color: #F7274A;
+  --background-pink-color: #2d7dc3;
+  --background-pink-hover-color: #2366a0;
+  --background-pink-pressed-color: #b40060;
+  --background-pink-disabled-color: #FFB4DA;
+  --background-pink-light-hover-color: #FFD1E8;
+  --background-pink-lighter-color: #FFF7FB;
+  --inverted-background-primary-color: #282828;
+  --inverted-background-secondary-color: #202020;
+  --border-primary-color: #ececec;
+  --border-secondary-color: #f7f7f7;
+  --border-hover-color: #dadada;
+  --border-dark-color: #4a4a4a;
+  --border-focus-color: #2d7dc3;
+  --main-font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --main-font-size: 1.6rem;
+  --main-font-weight: 400;
+  --main-line-height: 1.3;
+  --alt-font-family: 'Merriweather', Georgia, serif;
+  --alt-font-size: 1.6rem;
+  --alt-font-weight: 400;
+  --alt-line-height: 1.3;
+  --signature-font-family: 'Dancing Script', Arial, sans-serif;
+  --signature-font-size: 1.6rem;
+  --signature-font-weight: 400;
+  --signature-line-height: 1.3;
+}
+
+
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media all and (-ms-high-contrast:none),
+(-ms-high-contrast:active) {}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  font-family: var(--main-font-family);
+  color: var(--border-dark-color);
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  white-space: normal !important;
+}
+
+b {
+  font-weight: 700;
+}
+
+a {
+  color: var(--text-link-color);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 7.2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}

@@ -1,0 +1,277 @@
+@import url('./global.css');
+
+/* Global */
+.part-header {
+  border: 1px solid rgb(218, 218, 218) !important;
+}
+
+/* Section Hero */
+.section-hero {
+  padding: 70px 20px 40px;
+  background: #f7f7f7;
+  position: relative;
+}
+
+.section-hero__logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+  padding: 24px 0 16px;
+}
+
+.section-hero__logo img {
+  width: 120px;
+}
+
+.section-hero__background {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
+}
+
+/* Form */
+.form-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px #2d7dc320;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  padding: 16px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group select:focus {
+  border-color: #2d7dc3;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 8px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+  background-color: #2d7dc3;
+  border-color: #2d7dc3;
+}
+
+.checkbox-group input[type="checkbox"]:checked::after {
+  content: '\2713';
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Estilos para o dropdown com checkboxes */
+.multiselect-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.multiselect-select-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.multiselect-select-box select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  background: #fff;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+  background-size: 10px auto;
+  padding-right: 35px;
+}
+
+.multiselect-select-box select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.overselect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+
+.multiselect-checkboxes {
+  display: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.multiselect-checkboxes label {
+  display: block;
+  padding: 8px 5px;
+  cursor: pointer;
+  font-weight: normal;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.multiselect-checkboxes label:hover {
+  background-color: #f0f0f0;
+}
+
+.multiselect-checkboxes input[type="checkbox"] {
+  margin-right: 8px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.multiselect-checkboxes input[type="checkbox"]:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.multiselect-checkboxes input[type="checkbox"]:checked::after {
+  content: '\2713';
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-group button {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  padding: 15px;
+  background-color: #2d7dc3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1.4rem;
+}
+
+.form-group button:hover {
+  background-color: #2d7dc3;
+  transform: translateY(-2px);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+  font-size: 1.4rem;
+  background: #fff;
+  padding: 16px;
+  color: #0d0d0d;
+}
+
+option {
+  color: #0d0d0d;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 16px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group select {
+    padding: 12px;
+  }
+
+  .form-container h2 {
+    font-size: 1.8em;
+  }
+}

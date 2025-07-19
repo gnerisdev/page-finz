@@ -1,3 +1,5 @@
+@import url(global.css);
+
 /***************************************/
 /****************Custom*****************/
 /***************************************/
@@ -7,76 +9,6 @@
   .ljKEHi {
     padding-top: 0 !important;
   }
-}
-
-/* Header */
-header {
-  background: #fbfbfb !important;
-  height: 140px !important;
-}
-
-header.custom-scroll {
-  height: 70px !important;
-  background: #fff !important;
-}
-
-header.custom-scroll .logo {
-  height: 38px;
-}
-
-header .logo {
-  height: 48px;
-  opacity: 0.8;
-}
-
-@media (min-width: 1246px) {
-  header.custom-scroll .logo-center {
-    display: none;
-  }
-}
-
-header .logo-right {
-  display: none;
-  position: static;
-}
-
-@media (min-width: 1246px) {
-  header.custom-scroll .logo-right {
-    display: block;
-  }
-}
-
-header .eFPWSt {
-  top: 80%;
-  transform: translate(-50%, -50%);
-  height: auto !important;
-}
-
-header.custom-scroll .eFPWSt {
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.header-right {
-  display: flex;
-}
-
-.wrapper-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.wrapper-right .sobre {
-  height: 34px !important;
-  display: flex !important;
-  align-items: center !important;
-  padding: 8px 16px !important;
-  font-size: 1.4rem !important;
-}
-
-.wrapper-right .logo {
-  height: 34px !important;
 }
 
 /* Hero */
