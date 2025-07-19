@@ -1,444 +1,1400 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="Referrer" content="origin" />
-    <meta name="google" content="notranslate" />
-    <meta name="screen-orientation" content="portrait" />
-    <meta name="orientation" content="portrait" />
-    <title>Fynz</title>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="Referrer" content="origin" />
+  <meta name="google" content="notranslate" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="orientation" content="portrait" />
+  <title>Fynz</title>
 
-    <link 
-      rel="stylesheet" 
-      href="./assets/css/home-default.css" 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="stylesheet" href="http://localhost/wp-content/themes/fynz/assets/css/home-default.css" />
+  <link rel="stylesheet" href="http://localhost/wp-content/themes/fynz/assets/css/home.css">
+</head>
+
+<body style="overflow-x: hidden;">
+  <div class="sc-dlfnbm sc-hKgILt fbwJYo oXQDT">
+    <div class="sc-fMQSxl fUOZVv">
+
+      <header class="part-header">
+  <div class="part-header__icon-menu" onclick="toggleMenu()">
+    <svg height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg" class="sc-lbNHPp gSVqtQ">
+      <path d="M2 4H18" stroke="#4a4a4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+      <path d="M2 10H18" stroke="#4a4a4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+      <path d="M2 16H18" stroke="#4a4a4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+    </svg>
+  </div>
+
+  <nav class="part-header__nav">
+    <div class="part-header__close" onclick="toggleMenu()">
+      <svg width="34px" height="34px" viewBox="0 0 25.00 25.00" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 22.4199C17.5228 22.4199 22 17.9428 22 12.4199C22 6.89707 17.5228 2.41992 12 2.41992C6.47715 2.41992 2 6.89707 2 12.4199C2 17.9428 6.47715 22.4199 12 22.4199Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M13.4102 16.4199L10.3502 13.55C10.1944 13.4059 10.0702 13.2311 9.98526 13.0366C9.9003 12.8422 9.85645 12.6321 9.85645 12.4199C9.85645 12.2077 9.9003 11.9979 9.98526 11.8035C10.0702 11.609 10.1944 11.4342 10.3502 11.29L13.4102 8.41992" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+    </div>
+
+    <a href="/seguro-de-vida" class="part-header__link">Vida</a>
+    <a href="/plano-de-saude" class="part-header__link">Plano de Saúde</a>
+    <a href="/consorcio" class="part-header__link">Consórcio</a>
+    <a href="/responsabilidade-civil" class="part-header__link">Responsabilidade Civil</a>
+    <a href="/seguro-auto" class="part-header__link">Outros</a>
+    <a class="part-header__button" href="/sobre">Sobre nós</a>
+  </nav>
+
+  <div class="part-header__nav__background" aria-hidden="true"></div>
+
+  <div class="part-header__right">
+    <a class="part-header__button" href="/sobre">Sobre nós</a>
+    <img 
+      src="http://localhost/wp-content/themes/fynz/assets/img/logo-fynz-02.png" 
+      class="part-header__logo" 
+      alt="Logo Fynz" 
     />
-    <link 
-      rel="stylesheet" 
-      href="./assets/css/home.css" 
-    >
-  </head>
+  </div>
+</header>
 
-  <body style="overflow-x: hidden;">
-    <div class="sc-dlfnbm sc-hKgILt fbwJYo oXQDT">
-      <div class="sc-fMQSxl fUOZVv">
-        <header class="sc-dlfnbm sc-hKgILt sc-cWFsfX hiLtqB jxApkz jDmmgR sc-ac6114b6-1 fJuOFv">
-          <div class="sc-dlfnbm sc-kgChJM cWMrUO gjJFNr sc-gizGLm ihorCT">
-            <div
-              aria-controls="menu"
-              aria-label="Open the menu"
-              role="button"
-              width="30"
-              class="sc-dlfnbm sc-hKgILt sc-bbgIzc eVqOPO dpSTLb czaQwo"
-            >
-              <svg
-                height="20"
-                viewBox="0 0 20 20"
-                width="20"
-                xmlns="http://www.w3.org/2000/svg"
-                class="sc-lbNHPp gSVqtQ"
-              >
-                <path
-                  d="M2 4H18"
-                  stroke="#4a4a4a"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                ></path>
-                <path
-                  d="M2 10H18"
-                  stroke="#4a4a4a"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                ></path>
-                <path
-                  d="M2 16H18"
-                  stroke="#4a4a4a"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                ></path>
-              </svg>
-            </div>
-          </div>
-          <div class="sc-dlfnbm sc-cCGtLG cWMrUO jPMGAU">
-            <nav class="sc-dlfnbm sc-hKgILt sc-iUScIm cWMrUO chrFRT bvqfKF">
-              <a href="seguro-de-vida.html" class="sc-eIgblV fXcyGr">Vida</a>
-              <a href="plano-saude.html" class="sc-eIgblV fXcyGr">Plano de Saúde</a>
-              <a href="consorcio.html" class="sc-eIgblV fXcyGr">Consórcio</a>
-              <a href="responsabilidade-civil.html" class="sc-eIgblV fXcyGr">Responsabilidade Civil</a>
-              <a href="seguro-auto.html" class="sc-eIgblV fXcyGr">Outros</a>
-            </nav>
-          </div>
-          <div class="sc-dlfnbm sc-hKgILt sc-PfnZo cWMrUO dpSTLb eFPWSt">
-            <a class="logo-center" href="/" title="Fynz">
-              <img
-                src="./assets/img/logo-black.svg"
-                class="logo"
-                alt="Logo Fynz"
-              />
-            </a>
-          </div>
+<script>
+  // Menu Hamburguer
+  function toggleMenu() {
+    document.querySelector('.part-header__nav').classList.toggle('active');
+    document.querySelector('.part-header__nav__background').classList.toggle('active');
+  }
 
-          <div class="wrapper-right">
-            <div class="sc-dlfnbm sc-hKgILt sc-gbkRTH cWMrUO hPiBWL fblxkw">
-              <a
-                class="sc-jNMdTA sc-d98de5f3-0 ucyLk iTsFZR sc-e3cf1f21-6 gxDWLU"
-                href="sobre.html"
-                style="width: 100%; height: auto; padding: 9px 16px; font-size: 1.4rem !important;"
-              >
-                Sobre nós
-              </a>
-            </div>
-            <a class="logo-right" href="/" title="Fynz">
-              <img
-                src="./assets/img/logo-black.svg"
-                class="logo"
-                alt="Logo Fynz"
-              />
-            </a>
-          </div>
-        </header>
+  // Scroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 90) {
+      document.body.classList.add('custom-scroll');
+    } else {
+      document.body.classList.remove('custom-scroll');
+    }
+  });
 
-        <div class="sc-dlfnbm sc-hKgILt sc-ac6114b6-0 cWMrUO oXQDT kCOMIl">
-          <main
-            role="main"
-            id="main-content"
-            overflow="hidden"
-            height="auto"
-            class="sc-dlfnbm sc-hKgILt ljKEHi lUAVC"
-          >
-            <section class="hero">
-              <div class="hero__content">
-                <h1 class="sc-54d9f4b-2 sc-30d4cc2b-5 gQbYMf bgWkHb hero__title">
-                  Proteger devia ser fácil. A Fynz fez ser!
-                </h1>
-                <p class="sc-54d9f4b-4 gewRil hero__text">
-                  Não vendemos seguro, ensinamos você a contratar. Simples, direto e do seu jeito.
-                </p>
-                <div class="wrapper-buttons">
-                  <a href="fynz_hero_button_1_link', '/" class="sc-jNMdTA sc-d98de5f3-0 ucyLk iTsFZR sc-e3cf1f21-6 gxDWLU">
-                    Simular agora
-                  </a>
-                  <a href="fynz_hero_button_2_link', '/" class="sc-jNMdTA sc-d98de5f3-0 ucyLk iTsFZR sc-e3cf1f21-6 gxDWLU">
-                    Falar com Especialista
-                  </a>
-                </div>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Cor logo
+    const logo = document.querySelector(".part-header__logo");
+    const isHomePage = window.location.pathname === "/" || window.location.pathname === "/index.html";
+    if (!isHomePage) logo.style.filter = "grayscale(100%) contrast(200%)";
+  });
+</script>
+
+<style>
+  .part-header {
+    height: 68px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+  }
+
+  .custom-scroll .part-header {
+    border: 1px solid rgb(218, 218, 218);
+  }
+
+  .part-header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    z-index: 20;
+  } 
+  @media (max-width: 1050px) {
+    .part-header__nav {
+      position: absolute;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 100vh;
+      width: 80%;
+      max-width: 240px;
+      top: -1px;
+      left: -1000px;
+      background: #fff;
+    } 
+
+    .part-header__nav.active {
+      left: -1px;
+      transition: left 0.5s ease-in-out;
+    }
+
+    .part-header__link {
+      padding: 4px 24px;
+    }
+  }
+
+  .part-header__nav .part-header__button {
+    display: none;
+  } 
+  @media (max-width: 1050px) {
+    .part-header__nav .part-header__button {
+      display: flex;
+      position: absolute;
+      bottom: 12px;
+      left: 24px;
+    } 
+  }
+
+  .part-header__close {
+    height: 68px;
+    background-color: #2d7dc3;
+    color: #fff;
+    width: 100%;
+    display: none;
+  }
+  @media (max-width: 1050px) {
+    .part-header__close {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } 
+  }
+
+  .part-header__icon-menu {
+    display: none;
+    cursor: pointer;
+  }
+  @media (max-width: 1050px) {
+    .part-header__icon-menu {
+      display: block;
+    } 
+  }
+
+  .part-header__link {
+    margin: 0px;
+    color: rgb(74, 74, 74);
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height);
+    font-weight: var(--main-font-weight);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .part-header__right {
+    display: flex;
+    gap: 12px;
+  }
+
+  .part-header__button {
+    width: fit-content;
+    height: 38px;
+    padding: 8px 12px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #2d7dc3;
+    border: 1px solid transparent;
+    font-family: var(--main-font-family);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    .part-header__button {
+      display: none;
+    } 
+  }
+
+  .part-header__nav__background {
+    display: none;
+  }
+
+  @media (max-width: 1050px) {
+    .active.part-header__nav__background {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9;
+      display: block;
+    }
+  }
+
+  .part-header__logo {
+    height: 34px;
+    display: none;
+  }
+  @media (max-width: 1050px) {
+    .part-header__logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    } 
+  }
+
+  .custom-scroll .part-header__logo {
+    display: block;
+  }
+</style>
+      <div class="sc-dlfnbm sc-hKgILt sc-ac6114b6-0 cWMrUO oXQDT kCOMIl">
+        <main id="main-content" class="sc-dlfnbm sc-hKgILt ljKEHi lUAVC">
+          <section class="section-hero">
+            <!-- Background -->
+            <img class="section-hero__background" src="http://localhost/wp-content/themes/fynz/assets/img/hero-background.svg">
+
+            <!-- Content -->
+            <div class="section-hero__content">
+              <img src="http://localhost/wp-content/themes/fynz/assets/img/logo-fynz-02.png" alt="Logo Fynz">
+              <h1 class="sc-54d9f4b-2 sc-30d4cc2b-5 gQbYMf bgWkHb section-hero__title">
+                Proteger devia ser fácil. A Fynz fez ser!              </h1>
+              <p class="sc-54d9f4b-4 gewRil hero__text" style="max-width: 400px; margin: auto">
+                Não vendemos seguro, ensinamos você a contratar. Simples, direto e do seu jeito.              </p>
+              <div class="section-hero__wrapper-buttons">
+                <a href="/"
+                  class="sc-jNMdTA sc-d98de5f3-0 ucyLk iTsFZR sc-e3cf1f21-6 gxDWLU">
+                  Simular agora                </a>
+                <a href="/"
+                  class="sc-jNMdTA sc-d98de5f3-0 ucyLk iTsFZR sc-e3cf1f21-6 gxDWLU">
+                  Falar com Especialista                </a>
               </div>
+            </div>
 
-              <div>
-                <div id="bird-fly-animation">
-                  <dotlottie-player
-                    src="https://lottie.host/5c9b23ba-f9ec-492b-a944-830b87a092fb/INqKXjyuUc.lottie"
-                    speed="1"
-                    style="height: 50px; z-index: 0"
-                    loop autoplay
-                  ></dotlottie-player>
-                </div>
-                <div id="cloud-animation">
-                  <img src="./assets/img/cloud.svg" aria-hidden="true">
-                  <img src="./assets/img/cloud.svg" aria-hidden="true">
-                  <img src="./assets/img/cloud.svg" aria-hidden="true">
-                  <img src="./assets/img/cloud.svg" aria-hidden="true">
-                  <img src="./assets/img/cloud.svg" aria-hidden="true">
-                </div>
-                <div class="hero__background">
-                  <img
-                    aria-hidden="true"
-                    decoding="async"
-                    src="./assets/img/hero-background.svg"
-                  >
-                  <div style="position: relative;">
-                      <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="./assets/img/car2.gif"
-                        id="car-hero"
-                      >
-                      <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="./assets/img/hero-background-bottom.svg"
-                      >
-                  </div>
-                </div>
-              </div>
-            </section>
+            <!-- Animações -->
+            <div id="bird-fly-animation">
+              <dotlottie-player
+                src="https://lottie.host/5c9b23ba-f9ec-492b-a944-830b87a092fb/INqKXjyuUc.lottie"
+                speed="1" style="height: 50px; z-index: 0" loop autoplay></dotlottie-player>
+            </div>
+            <div id="cloud-animation">
+              <img src="http://localhost/wp-content/themes/fynz/assets/img/cloud.svg" aria-hidden="true">
+              <img src="http://localhost/wp-content/themes/fynz/assets/img/cloud.svg" aria-hidden="true">
+              <img src="http://localhost/wp-content/themes/fynz/assets/img/cloud.svg" aria-hidden="true">
+              <img src="http://localhost/wp-content/themes/fynz/assets/img/cloud.svg" aria-hidden="true">
+              <img src="http://localhost/wp-content/themes/fynz/assets/img/cloud.svg" aria-hidden="true">
+            </div>
+            <img aria-hidden="true" decoding="async" src="http://localhost/wp-content/themes/fynz/assets/img/car2.gif" id="car-hero">
+          </section>
 
-            <section
-              class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-ec74c623-1 krOXYT chrFRT dFtnhU iazvNN"
-              data-aos="fade-in"
-              data-aos-duration="1000"
-              id="section-como-funciona"
-            >
-              <h2 class="sc-54d9f4b-3 sc-39e5bffd-0 fpapqm iSrFZd">
-                Como funciona: <br >
-                Do seu jeito, com ou sem ajuda!
-              </h2>
+          <section class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-ec74c623-1 krOXYT chrFRT dFtnhU iazvNN" id="section-como-funciona">
+            <h2 class="sc-54d9f4b-3 sc-39e5bffd-0 fpapqm iSrFZd" data-aos="fade-up" data-aos-duration="800">
+              Como funciona: <br>
+              Do seu jeito, com ou sem ajuda!            </h2>
 
-              <div class="content">
-                <ul id="animation-list">
-                  <li data-aos="fade-right" data-aos-delay="0">Simule em minutos.</li>
-                  <li data-aos="fade-right" data-aos-delay="150">Compare sem viés.</li>
-                  <li data-aos="fade-right" data-aos-delay="300">Contrate direto.</li>
-                  <li data-aos="fade-right" data-aos-delay="450">Fale com um especialista se quiser.</li>
-                </ul>
+            <div class="content">
+              <ul id="animation-list">
+                <li data-aos="fade-right" data-aos-delay="0">Simule em minutos.</li>
+                <li data-aos="fade-right" data-aos-delay="150">Compare sem viés.</li>
+                <li data-aos="fade-right" data-aos-delay="300">Contrate direto.</li>
+                <li data-aos="fade-right" data-aos-delay="450">Fale com um especialista se quiser.</li>
+              </ul>
 
-                <script>
-                  document.addEventListener('DOMContentLoaded', function() {
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
                   const listItems = document.querySelectorAll('#animation-list li');
                   let index = 0;
 
                   function animateItem() {
                     if (index < listItems.length) {
-                      listItems.forEach(item => item.classList.remove('animate')); 
-                      listItems [index].classList.add('animate'); 
+                      listItems.forEach(item => item.classList.remove('animate'));
+                      listItems[index].classList.add('animate');
                       index++;
-                      setTimeout(animateItem, 4000); 
+                      setTimeout(animateItem, 4000);
                     } else {
-                      index = 0; 
+                      index = 0;
                       setTimeout(animateItem, 4000);
                     }
                   }
 
                   animateItem();
                 });
-                </script>
+              </script>
 
-                <dotlottie-player
-                  src="https://lottie.host/d95aff31-2b1e-406a-9f75-ea2ef2d7a4f6/IHFW1GkqSx.lottie"
-                  background="transparent"
-                  speed="1"
-                  style="height: 300px; filter: grayscale(100%);"
-                  loop
-                  autoplay
-                ></dotlottie-player>
+              <dotlottie-player
+                src="https://lottie.host/d95aff31-2b1e-406a-9f75-ea2ef2d7a4f6/IHFW1GkqSx.lottie"
+                background="transparent" speed="1" style="height: 300px; filter: grayscale(100%);" loop autoplay></dotlottie-player>
+            </div>
+          </section>
+
+          <div class="sc-dlfnbm cWMrUO">
+            <section class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-39e5bffd-3 coOpWf chrFRT foXEwJ fwdQVG">
+              <div class="sc-39e5bffd-2 ddZgjl"></div>
+              <div width="100%" class="sc-dlfnbm sc-hKgILt gdEqnR bPFemn">
+                <h2 class="sc-54d9f4b-3 sc-39e5bffd-0 fpapqm iSrFZd" data-aos="fade-up" data-aos-duration="800">
+                  Por que a Fynz?                </h2>
+
+                <p class="sc-54d9f4b-4 sc-39e5bffd-1 gewRil eYyymE" style="max-width: 700px;" data-aos="fade-up" data-aos-duration="1000">
+                  A Fynz não ganha comissão pra te vender qualquer coisa. A gente ganha quando você entende o que está fazendo — e escolhe ficar com a gente.                </p>
+
+                <div class="sc-dlfnbm sc-hKgILt sc-55636dc4-0 jIuwpq kIPpjk hUBpbV">
+                  <div class="sc-dlfnbm sc-55636dc4-1 cWMrUO kyQzZW">
+                    <div class="sc-dlfnbm sc-hKgILt sc-55636dc4-2 cWMrUO chrFRT iKYVbn">
+
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Sofia Alves                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            Seguro sempre foi um bicho de sete cabeças pra mim, mas com a Fynz foi tranquilo demais. Explicam tudo na certinho!                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Lucas Pereira                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            Revisar meu seguro com a Fynz foi a melhor coisa que fiz. Tava pagando mais por menos e nem sabia. Agora tô bem coberto e ainda economizando.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Camila Mendes                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            O atendimento da Fynz foi top. Tirou todas minhas dúvidas sobre  o plano de saúde.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Diego Farias                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            A Fynz foi super transparente, coisa rara hoje em dia. Me explicaram tudo sobre consórcio, sem empurrar nada. Recomendo pra quem quer algo de verdade, sem enrolação.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Gustavo rocha                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            A plataforma da Fynz é ótima para comparar seguros, com informações claras para eu decidir tranquilo. Parabéns pela iniciativa!                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Débora Costa                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            Nunca me senti tão tranquila pra fechar um seguro. A Fynz me explicou tudo direitinho. Recomendo pra quem quer sossego e entender de verdade o que tá contratando.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Rafael Menezes                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            A Fynz é o futuro dos seguros mesmo. Nada de letra miúda nem surpresa. Me explicaram tudo direitinho, agora sei exatamente o que tô contratando.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Felipe Nunes                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            Revisar meu seguro com a Fynz abriu meus olhos. Tinha várias falhas que eu nem fazia ideia. Agora sim tô bem coberto.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Carla Oliveira                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            Do jeito que tem que ser, simples e sem enrolação. Com a Fynz, contratar seguro virou coisa fácil.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Sofia Alves                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            Seguro sempre foi um bicho de sete cabeças pra mim, mas com a Fynz foi tranquilo demais. Explicam tudo na certinho!                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Lucas Pereira                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            Revisar meu seguro com a Fynz foi a melhor coisa que fiz. Tava pagando mais por menos e nem sabia. Agora tô bem coberto e ainda economizando.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Camila Mendes                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            O atendimento da Fynz foi top. Tirou todas minhas dúvidas sobre  o plano de saúde.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Diego Farias                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            A Fynz foi super transparente, coisa rara hoje em dia. Me explicaram tudo sobre consórcio, sem empurrar nada. Recomendo pra quem quer algo de verdade, sem enrolação.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Gustavo rocha                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            A plataforma da Fynz é ótima para comparar seguros, com informações claras para eu decidir tranquilo. Parabéns pela iniciativa!                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Débora Costa                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            Nunca me senti tão tranquila pra fechar um seguro. A Fynz me explicou tudo direitinho. Recomendo pra quem quer sossego e entender de verdade o que tá contratando.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Rafael Menezes                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            A Fynz é o futuro dos seguros mesmo. Nada de letra miúda nem surpresa. Me explicaram tudo direitinho, agora sei exatamente o que tô contratando.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Felipe Nunes                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            Revisar meu seguro com a Fynz abriu meus olhos. Tinha várias falhas que eu nem fazia ideia. Agora sim tô bem coberto.                          </p>
+                        </div>
+                      </div>
+                                            <div>
+                        <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
+                          <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+                            <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
+                              <strong class="sc-929dd2a3-2 fpqtPF" style="font-size: 1.8rem;">
+                                Carla Oliveira                              </strong>
+                            </div>
+                            <svg fill="#fa821e" height="88px" width="88px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fa821e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="60.44,233.482 48.895,196.215 37.351,233.482 0,233.482 30.22,256.513 18.676,293.785 48.895,270.744 79.115,293.785 67.571,256.513 97.791,233.482 "></polygon> <polygon points="158.492,233.482 146.948,196.215 135.403,233.482 98.052,233.482 128.272,256.513 116.728,293.785 146.948,270.744 177.168,293.785 165.623,256.513 195.843,233.482 "></polygon> <polygon points="256.544,233.482 245,196.215 233.456,233.482 196.104,233.482 226.324,256.513 214.78,293.785 245,270.744 275.22,293.785 263.676,256.513 293.895,233.482 "></polygon> <polygon points="354.596,233.482 343.052,196.215 331.508,233.482 294.157,233.482 324.377,256.513 312.832,293.785 343.052,270.744 373.272,293.785 361.728,256.513 391.948,233.482 "></polygon> <polygon points="441.105,196.215 429.56,233.482 392.209,233.482 422.429,256.513 410.885,293.785 441.105,270.744 471.324,293.785 459.78,256.513 490,233.482 452.649,233.482 "></polygon> </g> </g></svg>
+                          </div>
+                          <p class="sc-929dd2a3-4 gFsfCu">
+                            Do jeito que tem que ser, simples e sem enrolação. Com a Fynz, contratar seguro virou coisa fácil.                          </p>
+                        </div>
+                      </div>
+                                          </div>
+                  </div>
+                </div>
               </div>
             </section>
+          </div>
 
-            <div class="sc-dlfnbm cWMrUO">
-              <section class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-39e5bffd-3 coOpWf chrFRT foXEwJ fwdQVG">
-                <div class="sc-39e5bffd-2 ddZgjl"></div>
-                <div width="100%" class="sc-dlfnbm sc-hKgILt gdEqnR bPFemn">
-                  <h2 class="sc-54d9f4b-3 sc-39e5bffd-0 fpapqm iSrFZd">Por que a Fynz?</h2>
+          <div class="sc-dlfnbm cWMrUO">
+            <section class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-dc9d6dfb-1 bmZLvQ chrFRT dFtnhU cvqYWE">
+              <h2 class="sc-54d9f4b-3 sc-e3cf1f21-2 fpapqm kXfTiV" data-aos="fade-up" data-aos-duration="800">
+                Soluções inteligentes para sua proteção
+              </h2>
+              <ul id="lista-produto" class="sc-dc9d6dfb-0 iXTzFz"> </ul>
+            </section>
+          </div>
 
-                  <p class="sc-54d9f4b-4 sc-39e5bffd-1 gewRil eYyymE" style="max-width: 700px;">
-                    A Fynz não ganha comissão pra te vender qualquer coisa. A
-                    gente ganha quando você entende o que está fazendo — e
-                    escolhe ficar com a gente.
-                  </p>
-
-                  <div class="sc-dlfnbm sc-hKgILt sc-55636dc4-0 jIuwpq kIPpjk hUBpbV">
-                    <div class="sc-dlfnbm sc-55636dc4-1 cWMrUO kyQzZW">
-                      <div class="sc-dlfnbm sc-hKgILt sc-55636dc4-2 cWMrUO chrFRT iKYVbn"></div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-            
-            <div class="sc-dlfnbm cWMrUO">
-              <section class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-dc9d6dfb-1 bmZLvQ chrFRT dFtnhU cvqYWE">
-                <h2 class="sc-54d9f4b-3 sc-e3cf1f21-2 fpapqm kXfTiV">
-                  Soluções inteligentes para sua proteção
-                </h2>
-                <ul id="lista-produto" class="sc-dc9d6dfb-0 iXTzFz"> </ul>
-              </section>
-            </div>
-
-            <div class="sc-dlfnbm cWMrUO">
-              <section
-                overflow="hidden"
-                class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-22ad05c0-1 OnArS chrFRT foXEwJ cPjBar"
-              >
-                <h2 tabindex="0" class="sc-54d9f4b-3 fpapqm">Já tem seguro? A Fynz te ajuda!</h2>
-                  <div class="sc-dlfnbm hUilbz">
-                  <p class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK">
-                    Por que revisar seu seguro é uma escolha inteligente:
-                  </p>
-                </div>
-                                
-                <div class="sc-dlfnbm sc-hKgILt sc-5c0e759e-0 cWMrUO chrFRT kovtOE wrapper-checklist">
-                   <div class="checklist">
-                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-right" data-aos-delay="0">
-                      <p>Sua vida muda. Seu seguro também deveria.</p>
-                    </div>
-                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-left" data-aos-delay="100">
-                      <p>O mercado evolui. Sua apólice pode estar parada.</p>
-                    </div>
-                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-right" data-aos-delay="200">
-                      <p>Lacunas escondidas custam caro.</p>
-                    </div>
-                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-left" data-aos-delay="300">
-                      <p>Seu estilo de vida mudou? Seu preço pode mudar também.</p>
-                    </div>
-                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-right" data-aos-delay="400">
-                      <p>Surpresas não combinam com seguros.</p>
-                    </div>
-                    <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-left" data-aos-delay="500">
-                      <p>Surpresas não combinam com seguros.</p>
-                    </div>
-                     <div class="check-list-button" data-aos="fade-left" data-aos-delay="500">
-                      <a href="/onboarding/start">
-                        Revisar meu seguro
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="31,15 48,32 31,49 "></polyline> </g> <g> <polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="16,15 33,32 16,49 "></polyline> </g> </g></svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-
-            <div class="sc-dlfnbm cWMrUO">
-              <section style="padding-bottom: 0" class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-a1732406-5 bmZLvQ chrFRT dFtnhU ktvVmI">
-                <h2 class="sc-54d9f4b-3 sc-a1732406-0 fpapqm euHqSx">Por que a Fynz é diferente?</h2>
-
-                <p class="sc-54d9f4b-4 sc-a1732406-1 gewRil gSUlmM" style="max-width: 700px">
-                  No mercado tradicional, muitos focam em vender produtos específicos. 
-                  Na Fynz, nossa abordagem é centrada em você.
+          <div class="sc-dlfnbm cWMrUO">
+            <section overflow="hidden" class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-22ad05c0-1 OnArS chrFRT foXEwJ cPjBar">
+              <h2 tabindex="0" class="sc-54d9f4b-3 fpapqm" data-aos="fade-up" data-aos-duration="800">
+                Já tem seguro? A Fynz te ajuda!
+              </h2>
+              
+              <div class="sc-dlfnbm hUilbz" data-aos="fade-up" data-aos-duration="1000">
+                <p class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK">
+                  Por que revisar seu seguro é uma escolha inteligente:
                 </p>
+              </div>
 
-                <dotlottie-player
-                  src="https://lottie.host/487667aa-ab07-4f37-9891-327fa8df0f69/6CAG6lfbdz.lottie"
-                  background="transparent"
-                  speed="1"
-                  style="height: 50vh; filter: grayscale(100%)"
-                  loop
-                  autoplay
-                ></dotlottie-player>
-              </section>
-            </div>
-          </main>
-
-          <footer class="sc-dlfnbm sc-hKgILt sc-cyQorK dBmwIi bPFemn bUPfcU">
-            <div width="1" class="sc-dlfnbm sc-hKgILt sc-dRHnbo bTkrsl dmrqjU eVHvAB">
-              <div width="1,1,1" class="sc-dlfnbm sc-hKgILt dBGzLz cuBsqt">
-                <div class="sc-dlfnbm sc-hKgILt sc-bewBzT gXaqA-D oXQDT kjvWGs">
-                  <div class="sc-dlfnbm bSTlr">
-                    <div class="sc-dlfnbm dAzlZM">
-                      <h3 id="renters_label_desktop" class="sc-hrrSLS sc-hJOwSp hGmejr kfqiEn">Produtos:</h3>
-                    </div>
-                    <ul aria-labelledby="renters_label" class="sc-iSvQOs SuzVZ">
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a href="seguro-de-vida.html" class="sc-lfnXfa cFIrUk">Seguro de Vida</a>
-                      </li>
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a href="plano-saude.html" class="sc-lfnXfa cFIrUk">Plano de Saúde</a>
-                      </li>
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a href="consorcio.html" class="sc-lfnXfa cFIrUk">Consórcio</a>
-                      </li>
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a href="responsabilidade-civil.html" class="sc-lfnXfa cFIrUk">Responsabilidade Civil</a>
-                      </li>
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a href="seguro-auto.html" class="sc-lfnXfa cFIrUk">Outros</a>
-                      </li>
-                    </ul>
+              <div class="sc-dlfnbm sc-hKgILt sc-5c0e759e-0 cWMrUO chrFRT kovtOE wrapper-checklist">
+                <div class="checklist">
+                  <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-right" data-aos-delay="0">
+                    <p>Sua vida muda. Seu seguro também deveria.</p>
                   </div>
-                </div>
-
-                <div class="sc-dlfnbm sc-hKgILt sc-bewBzT gXaqA-D oXQDT kjvWGs">
-                  <div display="none,block" class="sc-dlfnbm bSTlr">
-                    <div class="sc-dlfnbm dAzlZM">
-                      <h3 class="sc-hrrSLS sc-hJOwSp hGmejr kfqiEn">Empresa:</h3>
-                    </div>
-                    <ul class="sc-iSvQOs SuzVZ">
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a href="seguro-de-vida.html" class="sc-lfnXfa cFIrUk">Seguro de Vida</a>
-                      </li>
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a href="seguro-auto.html" class="sc-lfnXfa cFIrUk">Seguro Auto</a>
-                      </li>
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a href="seguro-residencial.html" class="sc-lfnXfa cFIrUk">Seguro Residencial</a>
-                      </li>
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a href="plano-saude.html" class="sc-lfnXfa cFIrUk">Plano de Saúde</a>
-                      </li>
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a href="responsabilidade-civil.html" class="sc-lfnXfa cFIrUk">Responsabilidade Civil</a>
-                      </li>
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a href="consorcio.html" class="sc-lfnXfa cFIrUk">Consórcio</a>
-                      </li>
-                    </ul>
+                  <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-left" data-aos-delay="100">
+                    <p>O mercado evolui. Sua apólice pode estar parada.</p>
                   </div>
-                </div>
-
-                <div class="sc-dlfnbm sc-hKgILt sc-bewBzT gXaqA-D oXQDT kjvWGs">
-                  <div display="none,block" class="sc-dlfnbm bSTlr">
-                    <div class="sc-dlfnbm dAzlZM">
-                      <h3 id="pet_label_desktop" class="sc-hrrSLS sc-hJOwSp hGmejr kfqiEn">Contato:</h3>
-                    </div>
-                    <ul aria-labelledby="pet_label" class="sc-iSvQOs SuzVZ">
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a data-event="footer_pet_insurance_main_page_clicked" href="" class="sc-lfnXfa cFIrUk">
-                          (11) 9999-9999
-                        </a>
-                      </li>
-                      <li class="sc-dlfnbm sc-hKgILt sc-bbEFxx cWMrUO chrFRT jYJeqn">
-                        <a data-event="footer_pet_insurance_main_page_clicked" href="" class="sc-lfnXfa cFIrUk">
-                          contato@fynz.com.br
-                        </a>
-                      </li>
-                    </ul>
+                  <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-right" data-aos-delay="200">
+                    <p>Lacunas escondidas custam caro.</p>
+                  </div>
+                  <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-left" data-aos-delay="300">
+                    <p>Seu estilo de vida mudou? Seu preço pode mudar também.</p>
+                  </div>
+                  <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-right" data-aos-delay="400">
+                    <p>Surpresas não combinam com seguros.</p>
+                  </div>
+                  <div class="sc-54d9f4b-4 sc-22ad05c0-0 gewRil idLKtK item" data-aos="fade-left" data-aos-delay="500">
+                    <p>Surpresas não combinam com seguros.</p>
+                  </div>
+                  <div class="check-list-button" data-aos="fade-left" data-aos-delay="500">
+                    <a href="/fale-conosco">
+                      Revisar meu seguro
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px"
+                        viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g>
+                            <polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="31,15 48,32 31,49 ">
+                            </polyline>
+                          </g>
+                          <g>
+                            <polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="16,15 33,32 16,49 ">
+                            </polyline>
+                          </g>
+                        </g>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>
+            </section>
+          </div>
 
-              <div width="100%" class="sc-dlfnbm sc-hKgILt eEmcgs ceDHhE">
-                <div class="sc-dlfnbm sc-hKgILt cdFGqS cexKoV">
-                  <ul class="sc-hQGGob iROAho">
-                    <li>
-                      <a aria-label="facebook" data-event="footer_facebook_clicked" href="https://www.facebook.com/" rel="noopener" target="_blank">
-                        <img alt="facebook" src="//s3.amazonaws.com/edge-assets.lemonade.com/facebook-0ef4315d24cb5fda4c744e8e33ad179e.svg" />
-                      </a>
-                    </li>
-                    <li>
-                      <a aria-label="twitter" data-event="footer_twitter_clicked" href="https://twitter.com/lemonade_inc" rel="noopener" target="_blank">
-                        <img alt="twitter" src="//s3.amazonaws.com/edge-assets.lemonade.com/twitter-a306a57e98d33b5bfcb39356e59d864a.svg" />
-                      </a>
-                    </li>
-                    <li>
-                      <a aria-label="instagram" data-event="footer_instagram_clicked" href="https://instagram.com/lemonade_inc/" rel="noopener" target="_blank">
-                        <img alt="instagram" src="//s3.amazonaws.com/edge-assets.lemonade.com/instagram-9f32af78f7c0d9c0fa415fa485349653.svg" />
-                      </a>
-                    </li>
-                    <li>
-                      <a aria-label="linkedin" data-event="footer_linkedin_clicked" href="https://www.linkedin.com/company/lemonade-inc-" rel="noopener" target="_blank">
-                        <img alt="linkedin" src="//s3.amazonaws.com/edge-assets.lemonade.com/linkedin-342f8fb08d085d6a5e9c2a59bbc55f88.svg" />
-                      </a>
-                    </li>
-                    <li>
-                      <a aria-label="youtube" data-event="footer_youtube_clicked" href="https://www.youtube.com/lemonade_inc" rel="noopener" target="_blank">
-                        <img alt="youtube" src="//s3.amazonaws.com/edge-assets.lemonade.com/youtube-2e6dec23b425462cd8e6efe5c297fe9f.svg" />
-                      </a>
-                    </li>
-                    <li>
-                      <a aria-label="tiktok" data-event="footer_tiktok_clicked" href="https://www.tiktok.com/@lemonade.inc" rel="noopener" target="_blank">
-                        <img alt="tiktok" src="//s3.amazonaws.com/edge-assets.lemonade.com/tiktok-07abe2bb630f815692c89ba65afc847b.svg" />
-                      </a>
-                    </li>
-                  </ul>
+          <section class="sc-dlfnbm sc-hKgILt sc-54d9f4b-1 sc-a1732406-5 bmZLvQ chrFRT dFtnhU ktvVmI section-differentiator">
+            <h2 class="sc-54d9f4b-3 sc-a1732406-0 fpapqm euHqSx" data-aos="fade-up" data-aos-duration="800">
+              Por que a Fynz é diferente?
+            </h2>
+
+            <p class="sc-54d9f4b-4 sc-a1732406-1 gewRil gSUlmM" style="max-width: 700px" data-aos="fade-up" data-aos-duration="900">
+              No mercado tradicional, muitos focam em vender produtos específicos.
+              Na Fynz, nossa abordagem é centrada em você.
+            </p>
+
+            <div class="differentiator-items">
+              <div class="differentiator-item" data-aos="fade-left" data-aos-duration="1000">
+                <div class="sc-929dd2a3-4 gFsfCu differentiador-item__title">
+                  A Fynz não é uma corretora. É um ecossistema de proteção
+                </div>
+                <p class="sc-929dd2a3-4 gFsfCu">
+                  Enquanto corretoras vendem produtos, a Fynz mapeia sua vida, identifica riscos 
+                  reais e monta soluções modulares. Começa com sua história e termina com um plano 
+                  de segurança e liberdade.
+                </p>
+              </div>
+
+              <div class="differentiator-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="sc-929dd2a3-4 gFsfCu differentiador-item__title">
+                  O atendimento começa na venda, não termina nela
+                </div>
+                <p class="sc-929dd2a3-4 gFsfCu">
+                  Na Fynz, você tem um account dedicado que acompanha sua jornada, propõe melhorias 
+                  e renegocia quando for preciso. Seguro contratado? A gente segue com você o ano 
+                  inteiro.
+                </p>
+              </div>
+
+              <div class="differentiator-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                <div class="sc-929dd2a3-4 gFsfCu differentiador-item__title">
+                  Aqui você entende o que está contratando
+                </div>
+                <p class="sc-929dd2a3-4 gFsfCu">
+                  Nada de “segurês”. A Fynz traduz tudo, mostra cenários e explica cada ponto em 
+                  português claro. Você entende, escolhe e acompanha, sem depender de sorte nem de 
+                  atendimento genérico.
+                </p>
+              </div>
+
+              <div class="differentiator-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                <div class="sc-929dd2a3-4 gFsfCu differentiador-item__title">
+                  Aqui você é recompensado por se cuidar
+                </div>
+                <p class="sc-929dd2a3-4 gFsfCu">
+                  A Fynz vai além da proteção: usa gamificação, cashback e upgrades pra te incentivar 
+                  a se cuidar. Quanto mais você participa, mais benefícios recebe. Cuidar de si vira 
+                  vantagem.
+                </p>
+              </div>
+
+              <div class="differentiator-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                <div class="sc-929dd2a3-4 gFsfCu differentiador-item__title">
+                  Somos digitais, mas sem perder o lado humano
+                </div>
+                <p class="sc-929dd2a3-4 gFsfCu">
+                  em tecnologia, automação e eficiência. Mas o diferencial é ter uma pessoa de verdade, 
+                  que te chama pelo nome e resolve. Digital onde precisa, humano onde faz diferença.
+                </p>
+              </div>
+            </div>
+
+            <p class="sc-54d9f4b-4 sc-a1732406-1 gewRil gSUlmM fire-text" data-aos="fade-up" data-aos-duration="800">
+              <span> 
+                Outras corretoras vendem seguro:
+                A Fynz estrutura proteção.  
+              </span> <br>
+              <span> 
+                Outras corretoras fazem cotações:
+                A Fynz faz estratégia.  
+              </span> <br>
+              <span> 
+                Outras te esquecem depois da venda:
+                A Fynz te acompanha.
+              </span> 
+            </p>
+          </section>
+
+          <section class="section-como-funciona">
+            <h2 class="sc-54d9f4b-3 fpapqm" data-aos="fade-up" data-aos-duration="800">
+              Como funciona?
+            </h2>
+
+            <div class="section-como-funciona__content">
+              <div
+                class="section-como-funciona__content__fogueira"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
+                <style>
+#Vector_114 {
+  animation: spark_fly_up 3.5s 0.4s infinite linear;
+}
+
+#Vector_123 {
+  animation: spark_fly_up 3.1s 0.6s infinite linear;
+}
+
+#Vector_124 {
+  animation: spark_fly_up 3s 0.4s infinite linear;
+}
+
+#Vector_122 {
+  animation: spark_fly_up 3s 0.5s infinite linear;
+}
+
+#Vector_116 {
+  animation: spark_fly_up_2 2.8s 0.8s infinite linear;
+}
+
+#Vector_113 {
+  animation: spark_fly_up_2 2.2s 0.6s infinite linear;
+}
+
+#Vector_119 {
+  animation: spark_fly_up_2 2.2s 0.7s infinite linear;
+}
+
+#Vector_117 {
+  animation: spark_fly_up_2 2s 0.4s infinite linear;
+}
+
+#Vector_115 {
+  animation: spark_fly_up_2 3.2s 0.7s infinite linear;
+}
+
+#Vector_118 {
+  animation: spark_fly_up_3 2.7s 0.6s infinite linear;
+}
+
+#Vector_120 {
+  animation: spark_fly_up_3 3s 0.4s infinite linear;
+}
+
+#Vector_121 {
+  animation: spark_fly_up_3 2.8s 0.8s infinite linear;
+}
+
+@keyframes spark_fly_up {
+  0% {
+    transform: translate(0, 10vw);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translate(10px, 7vw);
+  }
+
+  60% {
+    transform: translate(0px, 3vw);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(10px, -2vw);
+    opacity: 0;
+  }
+}
+
+@keyframes spark_fly_up_2 {
+  0% {
+    transform: translate(0, 5vw);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translate(10px, 3vw);
+  }
+
+  60% {
+    transform: translate(0px, 1vw);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(10px, -2vw);
+    opacity: 0;
+  }
+}
+
+@keyframes spark_fly_up_3 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translate(0, -2vw);
+    opacity: 0.4;
+  }
+
+  60% {
+    transform: translate(0px, -3vw);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translate(0px, -4vw);
+    opacity: 0;
+  }
+}
+
+// halo animation
+#Vector_91 {
+  animation: fire_halo 3s infinite alternate ease-in-out;
+  transform-origin: center bottom;
+  transform-box: fill-box;
+}
+
+@keyframes fire_halo {
+  0% {
+    transform: scale(1.02);
+  }
+
+  20% {
+    transform: scale(0.95);
+  }
+
+  40% {
+    transform: scale(0.92);
+  }
+
+  60% {
+    transform: scale(0.94);
+  }
+
+  80% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+//flicker animation
+#Vector_126 {
+  animation: flicker 1s 0.4s infinite alternate linear;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#Vector_125 {
+  animation: flicker 2s 0.5s infinite alternate linear;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes flicker {
+  0% {
+    transform: rotate(-1deg);
+  }
+
+  20% {
+    transform: rotate(1deg);
+  }
+
+  40% {
+    transform: rotate(-1deg);
+  }
+
+  60% {
+    transform: rotate(1deg) scaleY(1.02);
+  }
+
+  80% {
+    transform: rotate(-1deg) scaleY(0.95);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+#Vector_16,
+#Vector_19,
+#Vector_60 {
+  animation: translate 100s infinite -40s linear;
+}
+
+#Vector_15,
+#Vector_17,
+#Vector_18,
+#Vector_61,
+#Vector_62 {
+  animation: translate 130s infinite -20s linear;
+}
+
+@keyframes translate {
+  from {
+    transform: translateX(-80%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+#meteor1 {
+  animation: meteorTraslate 2.2s linear 5s;
+}
+
+#meteor2 {
+  animation: meteorTraslate 1.8s linear 11s;
+}
+
+@keyframes meteorTraslate {
+  from {
+    transform: translate(0%, 0);
+  }
+
+  to {
+    transform: translate(-70%, 20%);
+    opacity: 0;
+  }
+}
+</style>
+
+<svg
+   version="1.1"
+   id="svg2434"
+   xml:space="preserve"
+   width="403.22333"
+   height="393.57919"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs2438"><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2677">
+      <rect
+   style="fill:#ffffff;fill-opacity:0.0865364;stroke:#4a4a4a;stroke-width:0.0757497;stroke-linejoin:round;stroke-miterlimit:4.5;paint-order:markers fill stroke"
+   id="rect2679"
+   width="271.35852"
+   height="291.79004"
+   x="188.28838"
+   y="303.80722"
+   ry="0.037478" />
+    </clipPath><radialGradient
+       id="paint2_radial_11_2760"
+       cx="0.1195518"
+       cy="-0.028252957"
+       r="1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.86609575,208.4622,-206.99575,0.86000311,324.93694,412.30951)"
+       fx="0.1195518"
+       fy="-0.028252957">
+      <stop
+   offset="0.29237813"
+   stop-color="#FED256"
+   id="stop62" />
+      <stop
+   offset="0.57540935"
+   stop-color="#FFF6DC"
+   stop-opacity="0"
+   id="stop64" />
+    </radialGradient></defs><sodipodi:namedview
+     id="namedview2436"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" /><inkscape:clipboard
+     min="723.89358,427.47792"
+     max="1127.1169,821.0571"
+     geom-min="645.77496,317.58474"
+     geom-max="1214.2537,833.61325" /><g
+     id="g2445"
+     transform="matrix(3.7795276,0,0,3.7795276,-189.57932,-333.14531)"><g
+       id="SVGRepo_bgCarrier"
+       stroke-width="0"
+       transform="matrix(-0.20710778,-0.04941745,0.04852061,-0.20232001,89.055838,84.001748)" /><g
+       id="SVGRepo_tracerCarrier"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       transform="matrix(-0.20710778,-0.04941745,0.04852061,-0.20232001,89.055838,84.001748)"
+       style="stroke-width:1.25708" /><g
+       id="SVGRepo_iconCarrier"
+       transform="matrix(0.09740951,0.00180063,-0.00216169,0.08159665,131.74436,156.26802)"
+       style="opacity:0.6;fill:none;stroke:#000000;stroke-width:14.1856;stroke-dasharray:none;stroke-opacity:0.9" /><g
+       id="g5248"
+       transform="matrix(1.5094575,0,0,1.3701886,-12.437716,228.73228)"
+       style="stroke-width:0.858735">
+    <g
+   mask="url(#mask0_11_2760)"
+   id="g49"
+   style="stroke-width:0.706346"
+   transform="matrix(0.26046165,0,0,0.26046165,-7.5718738,-181.73468)"
+   clip-path="url(#clipPath2677)">
+      <g
+   id="Bonfire"
+   style="stroke-width:0.706346"
+   transform="translate(2.0026274,1.335085)">
+        <path
+   id="Vector_91"
+   opacity="0.2"
+   d="m 324.999,603.571 c 105.644,0 191.286,-85.641 191.286,-191.286 C 516.285,306.641 430.643,221 324.999,221 c -105.644,0 -191.285,85.641 -191.285,191.285 0,105.645 85.641,191.286 191.285,191.286 z"
+   fill="url(#paint2_radial_11_2760)"
+   style="fill:url(#paint2_radial_11_2760);stroke-width:0.64529" />
+        <path
+   id="Vector_92"
+   d="m 332.464,549.095 c 0,0 -64.211,-9.399 -67.97,-6.925 -3.76,2.473 -7.421,21.173 0,25.724 7.42,4.551 66.486,-3.661 66.486,-3.661 1.98,-1.951 3.213,-4.534 3.484,-7.3 0.272,-2.766 -0.436,-5.54 -2,-7.838 z"
+   fill="#ffc727"
+   style="stroke-width:0.64529" />
+        <path
+   id="Vector_93"
+   opacity="0.49"
+   d="m 332.464,549.095 c 0,0 -64.211,-9.399 -67.97,-6.925 -3.76,2.473 -7.421,21.173 0,25.724 7.42,4.551 66.486,-3.661 66.486,-3.661 1.98,-1.951 3.213,-4.534 3.484,-7.3 0.272,-2.766 -0.436,-5.54 -2,-7.838 z"
+   fill="#000000"
+   style="stroke-width:0.64529" />
+        <path
+   id="Vector_94"
+   opacity="0.2"
+   d="m 264.791,542.96 c 1.88,-0.495 5.046,5.936 4.353,13.06 -0.693,7.123 -3.265,11.378 -4.353,11.279 -1.089,-0.099 -4.65,-4.156 -4.057,-12.961 0.495,-6.333 2.375,-11.081 4.057,-11.378 z"
+   fill="#ffffff"
+   style="stroke-width:0.64529" />
+        <g
+   id="Group"
+   opacity="0.2"
+   style="stroke-width:0.64529">
+          <path
+   id="Vector_95"
+   opacity="0.2"
+   d="m 271.519,544.741 c 3.69,-0.248 7.392,-0.248 11.081,0 l 5.541,0.495 2.77,0.494 c 0.867,0.292 1.762,0.491 2.671,0.594 3.57,0.596 7.17,0.993 10.784,1.187 l 11.081,0.99 c -3.691,0.195 -7.389,0.195 -11.081,0 -3.741,0.031 -7.48,-0.233 -11.18,-0.792 -0.914,-0.125 -1.811,-0.358 -2.671,-0.692 l -2.671,-0.495 -5.343,-0.792 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_96"
+   opacity="0.2"
+   d="m 278.741,548.6 7.817,1.286 c 2.572,0.495 5.144,1.088 7.618,1.385 2.57,0.149 5.147,0.149 7.717,0 h 7.816 c -2.539,0.679 -5.116,1.208 -7.717,1.583 -2.663,0.3 -5.351,0.3 -8.014,0 -2.607,-0.431 -5.185,-1.025 -7.717,-1.781 -2.565,-0.633 -5.079,-1.46 -7.52,-2.473 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_97"
+   opacity="0.2"
+   d="m 310.304,554.141 c 3.373,-2.495 7.39,-3.971 11.575,-4.255 2.135,-0.13 4.27,0.243 6.234,1.088 1.086,0.401 2.068,1.044 2.869,1.88 0.429,0.459 0.765,0.997 0.989,1.583 0.055,0.228 0.055,0.465 0,0.693 0,0 0,0 0,0 -0.149,0.297 -0.35,0.565 -0.594,0.791 -1.565,1.624 -3.612,2.699 -5.837,3.067 -1.102,0.294 -2.262,0.294 -3.364,0 l -3.166,-0.494 c -0.89,-0.693 -1.88,-1.187 -2.374,-2.474 -0.096,-0.183 -0.145,-0.387 -0.145,-0.593 0,-0.207 0.049,-0.41 0.145,-0.594 0.075,-0.164 0.185,-0.311 0.321,-0.431 0.137,-0.119 0.297,-0.208 0.47,-0.261 h 1.583 c 1.05,-0.151 2.116,-0.151 3.166,0 1.027,0.071 2.017,0.412 2.869,0.989 -1.893,-0.641 -3.944,-0.641 -5.837,0 h -1.385 c 0,0 0,0 0,0.594 0,0.593 1.187,1.187 1.979,1.583 0.853,0.447 1.748,0.811 2.671,1.088 0.874,0.245 1.798,0.245 2.671,0 1.838,-0.411 3.519,-1.338 4.848,-2.671 -0.15,-0.326 -0.351,-0.627 -0.593,-0.891 -0.631,-0.692 -1.408,-1.233 -2.276,-1.583 -1.755,-0.743 -3.635,-1.146 -5.54,-1.187 -2.007,-0.03 -4.008,0.237 -5.937,0.791 -1.814,0.277 -3.601,0.708 -5.342,1.287 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_98"
+   opacity="0.2"
+   d="m 331.673,560.373 c -2.503,1.313 -5.214,2.183 -8.014,2.573 -1.414,0.148 -2.84,0.148 -4.254,0 -1.453,-0.211 -2.879,-0.576 -4.255,-1.089 -2.576,-0.999 -5.059,-2.224 -7.42,-3.66 -2.437,-1.242 -5.034,-2.141 -7.717,-2.672 2.818,-0.203 5.643,0.308 8.212,1.484 2.671,0.99 5.046,2.276 7.519,3.167 2.492,0.951 5.151,1.388 7.816,1.285 2.735,-0.081 5.454,-0.445 8.113,-1.088 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_99"
+   opacity="0.2"
+   d="m 269.54,565.815 h 9.894 c 3.295,0.207 6.599,0.207 9.894,0 3.263,-0.586 6.584,-0.785 9.894,-0.593 3.265,0 6.529,0.594 9.893,1.088 h -9.893 c -3.317,0.031 -6.626,0.329 -9.894,0.891 -3.287,0.38 -6.607,0.38 -9.894,0 -3.323,-0.265 -6.626,-0.727 -9.894,-1.386 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_100"
+   opacity="0.2"
+   d="m 313.665,563.738 -8.212,-1.979 -4.155,-0.792 c -1.308,-0.246 -2.65,-0.246 -3.958,0 l -8.31,1.682 -4.255,0.495 c -1.474,0.242 -2.978,0.242 -4.452,0 -1.41,-0.304 -2.798,-0.7 -4.155,-1.187 -1.471,-0.505 -2.82,-1.314 -3.958,-2.375 -0.256,-0.399 -0.456,-0.832 -0.593,-1.286 -0.199,-0.509 -0.199,-1.074 0,-1.583 0.459,-0.779 1.205,-1.347 2.077,-1.583 1.398,-0.502 2.869,-0.77 4.354,-0.792 1.449,-0.098 2.903,-0.098 4.353,0 1.479,0.176 2.899,0.683 4.155,1.485 0.204,0.112 0.381,0.267 0.517,0.455 0.137,0.188 0.231,0.404 0.275,0.633 0,0.692 -0.693,0.89 -0.99,1.088 h -2.077 c -1.415,0.147 -2.84,0.147 -4.255,0 l 4.156,-0.495 c 1.187,0 3.364,-0.89 1.88,-1.484 -1.187,-0.637 -2.512,-0.977 -3.859,-0.989 -1.348,-0.149 -2.708,-0.149 -4.057,0 -1.346,0.101 -2.675,0.367 -3.957,0.792 -0.495,0 -0.989,0.593 -1.088,0.89 -0.121,0.156 -0.186,0.347 -0.186,0.544 0,0.197 0.065,0.388 0.186,0.544 0.947,0.822 2.061,1.43 3.265,1.781 1.29,0.487 2.612,0.884 3.957,1.188 2.69,0.389 5.423,0.389 8.113,0 2.77,0 5.442,-0.99 8.311,-1.287 h 2.176 c 0.725,-0.054 1.453,-0.054 2.177,0 l 4.155,1.088 c 3.068,1.188 5.739,2.078 8.41,3.167 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_101"
+   opacity="0.2"
+   d="m 295.56,555.822 c -3.858,-0.692 -7.42,-1.682 -11.081,-2.671 l -5.342,-1.385 c -1.795,-0.576 -3.658,-0.909 -5.541,-0.99 1.887,-0.442 3.851,-0.442 5.738,0 1.907,0.21 3.793,0.574 5.64,1.089 3.676,0.886 7.23,2.215 10.586,3.957 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+        </g>
+        <path
+   id="Vector_102"
+   d="m 323.561,548.599 c 0,0 64.31,-8.707 68.168,-6.134 3.859,2.572 7.025,21.272 -0.692,25.724 -7.717,4.452 -66.586,-4.453 -66.586,-4.453 -1.89,-2.023 -3.014,-4.643 -3.176,-7.408 -0.163,-2.764 0.646,-5.498 2.286,-7.729 z"
+   fill="#ffc727"
+   style="stroke-width:0.64529" />
+        <path
+   id="Vector_103"
+   opacity="0.49"
+   d="m 323.561,548.599 c 0,0 64.31,-8.707 68.168,-6.134 3.859,2.572 7.025,21.272 -0.692,25.724 -7.717,4.452 -66.586,-4.453 -66.586,-4.453 -1.89,-2.023 -3.014,-4.643 -3.176,-7.408 -0.163,-2.764 0.646,-5.498 2.286,-7.729 z"
+   fill="#000000"
+   style="stroke-width:0.64529" />
+        <path
+   id="Vector_104"
+   opacity="0.2"
+   d="m 391.334,543.256 c -1.88,0 -5.145,5.937 -4.452,13.06 0.692,7.124 3.067,11.378 4.155,11.279 1.089,-0.099 4.651,-4.056 4.156,-12.862 -0.297,-6.134 -2.177,-11.081 -3.859,-11.477 z"
+   fill="#ffffff"
+   style="stroke-width:0.64529" />
+        <g
+   id="Group_2"
+   opacity="0.2"
+   style="stroke-width:0.64529">
+          <path
+   id="Vector_105"
+   opacity="0.2"
+   d="m 325.936,561.957 10.982,0.594 c 1.812,0.098 3.629,0.098 5.441,0 h 2.672 2.869 c 3.717,0.064 7.423,0.428 11.081,1.088 3.634,0.557 7.235,1.317 10.784,2.275 l -10.982,-0.89 c -3.661,0 -7.321,-0.693 -10.883,-0.693 h -2.671 c -0.954,0.099 -1.916,0.099 -2.87,0 -1.845,0.102 -3.695,0.102 -5.54,0 -3.661,-0.89 -7.321,-1.583 -10.883,-2.374 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_106"
+   opacity="0.2"
+   d="m 332.563,561.758 c 2.485,-0.875 5.032,-1.57 7.618,-2.077 2.604,-0.596 5.25,-0.993 7.915,-1.187 2.664,-0.009 5.32,0.29 7.915,0.89 2.58,0.575 5.124,1.301 7.618,2.177 l -7.816,-0.792 c -2.528,-0.309 -5.071,-0.474 -7.618,-0.495 l -7.717,0.792 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_107"
+   opacity="0.2"
+   d="m 364.422,558.493 c 1.778,0.999 3.631,1.859 5.541,2.573 1.888,0.641 3.849,1.04 5.837,1.187 1.915,0.142 3.838,-0.128 5.64,-0.792 0.892,-0.262 1.707,-0.737 2.374,-1.385 0.312,-0.223 0.553,-0.532 0.693,-0.89 v 0 -0.495 c -1.237,-1.41 -2.85,-2.439 -4.65,-2.968 -0.846,-0.198 -1.726,-0.198 -2.573,0 l -2.869,0.792 c -0.813,0.3 -1.53,0.812 -2.077,1.484 0,0 0,0 0,0.593 h 1.286 c 1.917,0.696 4.018,0.696 5.936,0 -0.882,0.579 -1.913,0.888 -2.968,0.891 -1.05,0.147 -2.116,0.147 -3.166,0 l -1.583,-0.495 c 0,0 -0.594,0 -0.792,-0.791 -0.095,-0.166 -0.145,-0.353 -0.145,-0.545 0,-0.191 0.05,-0.378 0.145,-0.544 0.54,-1.078 1.454,-1.923 2.573,-2.374 l 2.968,-1.088 c 1.135,-0.298 2.328,-0.298 3.463,0 2.148,0.582 4.076,1.786 5.54,3.462 v 0.891 c 0.069,0.226 0.069,0.466 0,0.692 -0.255,0.565 -0.626,1.071 -1.088,1.484 -0.861,0.763 -1.872,1.336 -2.968,1.682 -2.036,0.687 -4.204,0.89 -6.332,0.594 -3.871,-0.392 -7.579,-1.753 -10.785,-3.958 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_108"
+   opacity="0.2"
+   d="m 386.19,553.645 c -2.565,-0.885 -5.219,-1.482 -7.916,-1.781 -2.618,-0.347 -5.28,-0.145 -7.816,0.594 -2.572,0.693 -5.045,1.781 -7.816,2.672 -2.671,0.904 -5.516,1.174 -8.31,0.791 2.729,-0.282 5.398,-0.983 7.914,-2.078 2.48,-1.242 5.062,-2.268 7.718,-3.067 1.378,-0.43 2.81,-0.663 4.254,-0.692 1.414,-0.153 2.84,-0.153 4.254,0 2.771,0.7 5.387,1.908 7.718,3.561 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_109"
+   opacity="0.2"
+   d="m 347.799,547.511 c 3.265,-0.691 6.569,-1.187 9.894,-1.484 3.287,-0.38 6.607,-0.38 9.894,0 3.268,0.561 6.577,0.859 9.893,0.89 h 9.894 c -3.271,0.591 -6.575,0.988 -9.894,1.188 -3.286,0.387 -6.607,0.387 -9.893,0 -3.293,-0.261 -6.601,-0.261 -9.894,0 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_110"
+   opacity="0.2"
+   d="m 368.48,548.6 -8.212,2.176 -4.156,0.693 c -0.755,0.099 -1.52,0.099 -2.275,0 h -2.177 l -8.212,-1.979 c -2.614,-0.68 -5.313,-0.98 -8.014,-0.89 l -3.957,0.791 c -1.246,0.299 -2.422,0.836 -3.463,1.583 -0.087,0.169 -0.132,0.355 -0.132,0.545 0,0.189 0.045,0.375 0.132,0.544 0.248,0.414 0.633,0.729 1.088,0.89 1.231,0.558 2.528,0.957 3.859,1.187 1.35,0.102 2.706,0.102 4.056,0 1.323,0.077 2.645,-0.161 3.859,-0.692 1.484,0 -0.594,-1.188 -1.781,-1.583 -1.327,-0.402 -2.683,-0.699 -4.056,-0.891 h 4.155 c 0.751,0.141 1.482,0.373 2.177,0.693 0.235,0.066 0.44,0.21 0.584,0.407 0.143,0.198 0.216,0.437 0.207,0.681 -0.044,0.229 -0.138,0.444 -0.274,0.633 -0.137,0.188 -0.313,0.343 -0.517,0.456 -1.364,0.65 -2.844,1.02 -4.354,1.088 -1.414,0.148 -2.84,0.148 -4.254,0 -1.495,-0.092 -2.965,-0.426 -4.353,-0.989 -0.862,-0.373 -1.563,-1.039 -1.979,-1.88 -0.146,-0.484 -0.146,-1 0,-1.484 0.131,-0.476 0.368,-0.916 0.693,-1.287 1.221,-0.981 2.637,-1.689 4.155,-2.077 1.394,-0.401 2.816,-0.698 4.254,-0.891 1.478,-0.2 2.975,-0.2 4.452,0 1.404,0.202 2.793,0.5 4.156,0.891 l 8.113,2.275 c 1.34,0.25 2.715,0.25 4.056,0 h 4.156 c 2.572,0.396 5.342,-0.099 8.014,-0.89 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_111"
+   opacity="0.2"
+   d="m 349.878,555.426 c -3.472,1.597 -7.127,2.76 -10.883,3.463 -1.867,0.328 -3.749,0.559 -5.639,0.692 -1.956,0.149 -3.92,-0.156 -5.739,-0.89 1.841,0.204 3.699,0.204 5.54,0 l 5.541,-1.088 c 3.683,-0.935 7.415,-1.661 11.18,-2.177 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+          <path
+   id="Vector_112"
+   opacity="0.2"
+   d="m 366.993,562.353 c 2.968,0.989 5.64,1.879 8.509,2.572 l 4.254,0.791 h 4.452 c -1.394,0.661 -2.909,1.032 -4.452,1.089 -1.565,0.036 -3.128,-0.13 -4.65,-0.495 -1.5,-0.379 -2.959,-0.91 -4.353,-1.583 -1.368,-0.593 -2.637,-1.394 -3.76,-2.374 z"
+   fill="#000000"
+   style="stroke-width:0.589509" />
+        </g>
+        <path
+   id="Vector_113"
+   d="m 377.084,412.561 c 0,0.268 0.054,0.534 0.16,0.781 0.105,0.246 0.26,0.469 0.455,0.654 0.194,0.185 0.424,0.329 0.676,0.422 0.251,0.094 0.519,0.135 0.787,0.122 0.525,0 1.028,-0.209 1.4,-0.58 0.371,-0.371 0.579,-0.874 0.579,-1.399 0.013,-0.268 -0.028,-0.536 -0.121,-0.788 -0.094,-0.252 -0.237,-0.481 -0.423,-0.676 -0.185,-0.194 -0.407,-0.349 -0.654,-0.454 -0.247,-0.106 -0.513,-0.16 -0.781,-0.16 -0.551,0 -1.079,0.219 -1.469,0.608 -0.389,0.39 -0.609,0.919 -0.609,1.47 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.706346" />
+        <path
+   id="Vector_114"
+   d="m 355.813,326.979 c 0,0.391 0.116,0.774 0.333,1.099 0.218,0.326 0.527,0.579 0.889,0.729 0.361,0.15 0.759,0.189 1.143,0.112 0.384,-0.076 0.736,-0.264 1.013,-0.541 0.277,-0.277 0.465,-0.629 0.542,-1.013 0.076,-0.384 0.037,-0.782 -0.113,-1.143 -0.15,-0.362 -0.403,-0.671 -0.729,-0.888 -0.325,-0.218 -0.708,-0.334 -1.099,-0.334 -0.525,0 -1.028,0.209 -1.399,0.58 -0.372,0.371 -0.58,0.874 -0.58,1.399 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.706346" />
+        <path
+   id="Vector_115"
+   d="m 279.433,399.5 c 0.37,0.362 0.867,0.566 1.385,0.566 0.518,0 1.015,-0.204 1.385,-0.566 0.369,-0.387 0.575,-0.9 0.575,-1.435 0,-0.534 -0.206,-1.048 -0.575,-1.434 -0.37,-0.363 -0.867,-0.566 -1.385,-0.566 -0.518,0 -1.015,0.203 -1.385,0.566 -0.208,0.176 -0.376,0.396 -0.491,0.643 -0.115,0.248 -0.174,0.518 -0.174,0.791 0,0.273 0.059,0.543 0.174,0.791 0.115,0.247 0.283,0.467 0.491,0.644 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.706346" />
+        <path
+   id="Vector_116"
+   d="m 374.416,425.521 c 0,0.709 0.281,1.388 0.782,1.889 0.501,0.501 1.18,0.782 1.889,0.782 0.708,0 1.388,-0.281 1.889,-0.782 0.501,-0.501 0.782,-1.18 0.782,-1.889 0,-0.708 -0.281,-1.388 -0.782,-1.889 -0.501,-0.501 -1.181,-0.782 -1.889,-0.782 -0.351,0 -0.698,0.069 -1.022,0.203 -0.325,0.134 -0.619,0.331 -0.867,0.579 -0.248,0.248 -0.445,0.543 -0.579,0.867 -0.134,0.324 -0.203,0.671 -0.203,1.022 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.706346" />
+        <path
+   id="Vector_117"
+   d="m 290.517,377.239 c 0.422,0.307 0.924,0.483 1.445,0.507 0.521,0.024 1.038,-0.105 1.486,-0.371 0.449,-0.266 0.81,-0.658 1.038,-1.126 0.229,-0.469 0.316,-0.994 0.249,-1.511 -0.066,-0.518 -0.282,-1.004 -0.622,-1.4 -0.339,-0.396 -0.787,-0.683 -1.288,-0.828 -0.502,-0.144 -1.034,-0.138 -1.532,0.016 -0.498,0.155 -0.94,0.452 -1.271,0.855 -0.231,0.282 -0.403,0.607 -0.503,0.958 -0.101,0.35 -0.129,0.717 -0.083,1.078 0.046,0.361 0.166,0.71 0.352,1.023 0.186,0.313 0.434,0.585 0.729,0.799 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.706346" />
+        <path
+   id="Vector_118"
+   d="m 266.868,476.969 c 0.025,0.718 0.328,1.397 0.845,1.896 0.517,0.498 1.207,0.776 1.925,0.776 0.708,0 1.388,-0.282 1.889,-0.783 0.501,-0.501 0.782,-1.18 0.782,-1.889 10e-4,-0.717 -0.278,-1.408 -0.776,-1.924 -0.498,-0.517 -1.178,-0.82 -1.895,-0.846 -0.727,0.025 -1.417,0.324 -1.932,0.839 -0.514,0.514 -0.814,1.205 -0.838,1.931 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.706346" />
+        <path
+   id="Vector_119"
+   d="m 370.16,421.662 c 0,0.156 0.03,0.31 0.09,0.455 0.06,0.144 0.147,0.275 0.257,0.385 0.111,0.11 0.242,0.197 0.386,0.257 0.144,0.06 0.298,0.091 0.454,0.091 0.156,0 0.31,-0.031 0.454,-0.091 0.144,-0.06 0.275,-0.147 0.385,-0.257 0.111,-0.11 0.198,-0.241 0.258,-0.385 0.06,-0.145 0.09,-0.299 0.09,-0.455 -0.023,-0.307 -0.155,-0.596 -0.373,-0.814 -0.218,-0.218 -0.507,-0.35 -0.814,-0.373 -0.315,0 -0.617,0.125 -0.84,0.348 -0.222,0.222 -0.347,0.525 -0.347,0.839 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.706346" />
+        <path
+   id="Vector_120"
+   d="m 381.242,460.643 c 0.656,0 1.187,-0.531 1.187,-1.187 0,-0.655 -0.531,-1.187 -1.187,-1.187 -0.656,0 -1.187,0.532 -1.187,1.187 0,0.656 0.531,1.187 1.187,1.187 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.706346" />
+        <path
+   id="Vector_121"
+   d="m 263.011,468.56 c 0,0.315 0.126,0.616 0.348,0.839 0.223,0.223 0.525,0.348 0.84,0.348 0.315,0 0.616,-0.125 0.839,-0.348 0.223,-0.223 0.348,-0.524 0.348,-0.839 -0.023,-0.308 -0.155,-0.596 -0.373,-0.814 -0.218,-0.218 -0.507,-0.351 -0.814,-0.374 -0.315,0 -0.617,0.125 -0.84,0.348 -0.222,0.223 -0.348,0.525 -0.348,0.84 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.706346" />
+        <path
+   id="Vector_122"
+   d="m 385.992,384.758 c 0,0.289 0.114,0.566 0.318,0.77 0.204,0.204 0.481,0.318 0.77,0.318 0.151,0.014 0.303,-0.004 0.447,-0.052 0.144,-0.049 0.275,-0.127 0.387,-0.229 0.112,-0.103 0.201,-0.227 0.262,-0.366 0.061,-0.139 0.092,-0.289 0.091,-0.441 0,-0.315 -0.125,-0.617 -0.348,-0.84 -0.222,-0.222 -0.524,-0.347 -0.839,-0.347 -0.152,-0.001 -0.302,0.03 -0.441,0.091 -0.139,0.061 -0.263,0.15 -0.366,0.262 -0.102,0.112 -0.18,0.244 -0.229,0.387 -0.048,0.144 -0.066,0.296 -0.052,0.447 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.706346" />
+        <path
+   id="Vector_123"
+   d="m 333.354,375.062 c 0.656,0 1.188,-0.531 1.188,-1.187 0,-0.655 -0.532,-1.187 -1.188,-1.187 -0.655,0 -1.187,0.532 -1.187,1.187 0,0.656 0.532,1.187 1.187,1.187 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.706346" />
+        <path
+   id="Vector_124"
+   d="m 324.549,357.452 c 0.655,0 1.187,-0.532 1.187,-1.187 0,-0.656 -0.532,-1.188 -1.187,-1.188 -0.656,0 -1.188,0.532 -1.188,1.188 0,0.655 0.532,1.187 1.188,1.187 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.706346" />
+      </g>
+      <g
+   id="Fire"
+   style="stroke-width:0.768372"
+   transform="matrix(1,0,0,0.84507489,0,86.747063)">
+        <path
+   id="Vector_125"
+   opacity="0.9"
+   d="m 324.475,559.929 c -46.885,0 -62.969,-39.736 -45.582,-72.757 15.221,-28.788 8.139,-60.982 0.521,-77.07 17.191,13.753 27.349,36.07 27.349,36.07 0,0 -13.984,-45.947 5.893,-80.315 4.786,24.328 49.49,77.201 42.115,113.011 8.254,-10.899 7.472,-35.68 5.649,-47.682 25.054,40.157 31.11,128.743 -35.945,128.743 z"
+   fill="#ffc727"
+   style="fill:#fa821e;fill-opacity:1;stroke-width:0.701951" />
+        <path
+   id="Vector_126"
+   opacity="0.3"
+   d="m 325.408,552.386 c 27.106,-2 34.7,-25.773 23.187,-44.195 -10.032,-16.049 -7.284,-35.041 -3.61,-44.716 -9.349,8.732 -14.26,22.114 -14.26,22.114 0,0 6.098,-27.269 -6.878,-46.375 -1.708,14.293 -25.302,46.944 -19.513,67.416 -5.236,-6 -5.821,-20.407 -5.236,-27.448 -12.78,24.391 -12.455,76.066 26.31,73.204 z"
+   fill="#ffffff"
+   style="stroke-width:0.701951" />
+      </g>
+    </g>
+  </g><g
+       id="SVGRepo_bgCarrier-5"
+       stroke-width="0"
+       transform="matrix(0.26458333,0,0,0.26458333,145.9583,7.8370276)"
+       style="stroke-width:0;stroke-dasharray:none" /><g
+       id="SVGRepo_tracerCarrier-6"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       transform="matrix(0.26458333,0,0,0.26458333,145.9583,7.8370276)"
+       style="stroke-width:0.990045;stroke-dasharray:none" /><g
+       id="SVGRepo_bgCarrier-9"
+       stroke-width="0"
+       transform="matrix(0.26458333,0,0,0.26458333,-7.1437499,-71.437499)"
+       style="fill:none;fill-opacity:1" /><g
+       id="SVGRepo_tracerCarrier-1"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       transform="matrix(0.26458333,0,0,0.26458333,-7.1437499,-71.437499)"
+       style="fill:none;fill-opacity:1" /></g></svg>
+
+
+
+                <div class="section-como-funciona__content__fogueira__setas">
+                  <img
+                    src="http://localhost/wp-content/themes/fynz/assets/img/seta-02.svg"
+                    alt="Seta"
+                    data-aos="fade-right"
+                    data-aos-delay="400"
+                  />
+
+                  <img
+                    src="http://localhost/wp-content/themes/fynz/assets/img/seta-01.svg"
+                    alt="Seta"
+                    data-aos="fade-right"
+                    data-aos-delay="600"
+                  />
+
+                  <img
+                    src="http://localhost/wp-content/themes/fynz/assets/img/seta-01.svg"
+                    alt="Seta"
+                    data-aos="fade-right"
+                    data-aos-delay="800"
+                  />
                 </div>
               </div>
 
-              <div width="100%" class="sc-dlfnbm sc-hKgILt sc-gflfmX khnFqV kZQmHc cZAvFN">
-                <p class="sc-gubKfm emmpnf">© 2025 Fynz. Todos os direitos reservados.</p>
-              </div>         
+              <div class="section-como-funciona__content__articles">
+                <article data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                  <p class="sc-929dd2a3-4 gFsfCu text">
+                    <strong>Faíscas: Proteger só quem pode pagar não basta. Vamos levar proteção para todos</strong> <br>
+                    A segunda parte vira impacto social e propósito. Toda contratação gera doações reais. 
+                    Causas que protegem quem nem sempre tem seguro: educação, saúde, combate à fome, 
+                    proteção animal.
+                  </p>
+                </article>
+
+                <article data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+                  <p class="sc-929dd2a3-4 gFsfCu text">
+                    <strong>Fogo: Pra você querer ficar. E querer indicar.</strong> <br>
+                    A terceira parte é reinvestida pra melhorar o que a gente oferece. A gente quer que você 
+                    traga tudo pra cá. Então esse elemento vira inovação, melhorias, e programas de 
+                    fidelidade.
+                  </p>
+                </article>
+
+                <article data-aos="fade-up" data-aos-delay="900" data-aos-duration="800">
+                  <p class="sc-929dd2a3-4 gFsfCu text">
+                    <strong>Madeira: Pra manter a máquina rodando do jeito certo.</strong> <br>
+                    Tecnologia, pessoas, estrutura. Não pra crescer a qualquer custo, mas pra entregar uma 
+                    experiência impecável.
+                  </p>
+                </article>
+              </div>
             </div>
-          </footer>
-        </div>
-      </div>
+          </section>
+        </main>
+
+        <footer class="part_footer">
+  <div class="part_footer_container">
+    <div class="part_footer_section">
+      <div class="part_footer_title">PRODUTOS:</div>
+      <ul class="part_footer_list">
+        <li class="part_footer_list_item"><a href="/seguro-de-vida">Vida</a></li>
+        <li class="part_footer_list_item"><a href="/plano-de-saude">Plano de Saúde</a></li>
+        <li class="part_footer_list_item"><a href="/consorcio">Consórcio</a></li>
+        <li class="part_footer_list_item"><a href="/responsabilidade-civil">Responsabilidade Civil</a></li>
+        <li class="part_footer_list_item"><a href="/outros">Outros</a></li>
+      </ul>
     </div>
 
- <style>
+    <div class="part_footer_section">
+      <div class="part_footer_title">EMPRESA:</div>
+      <ul class="part_footer_list">
+        <li class="part_footer_list_item"><a href="/sobre">Sobre Nós</a></li>
+        <li class="part_footer_list_item"><a href="#">LGPD</a></li>
+        <li class="part_footer_list_item"><a href="#">Política de Cookies</a></li>
+        <li class="part_footer_list_item"><a href="#">Política de Privacidade</a></li>
+      </ul>
+    </div>
+
+    <div class="part_footer_section">
+      <div class="part_footer_title">CONTATO:</div>
+      <ul class="part_footer_list">
+        <li class="part_footer_list_item"><a href="#">(11) 9999-9999</a></li>
+        <li class="part_footer_list_item"><a href="#">contato@fynz.com.br</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="part_footer_container">
+    <div class="part_footer_social_icons">
+      <a href="https://www.facebook.com.br/fynzgroup" target="_blank" class="part_footer_social_icon">
+        <img alt="facebook" src="//s3.amazonaws.com/edge-assets.lemonade.com/facebook-0ef4315d24cb5fda4c744e8e33ad179e.svg" />
+      </a>
+      <a href="https://www.instagram.com/fynzgroup/" target="_blank" class="part_footer_social_icon">
+        <img alt="instagram" src="//s3.amazonaws.com/edge-assets.lemonade.com/instagram-9f32af78f7c0d9c0fa415fa485349653.svg" />
+      </a>
+      <a href="https://www.linkedin.com/company/fynz" target="_blank" class="part_footer_social_icon">
+        <img alt="linkedin" src="//s3.amazonaws.com/edge-assets.lemonade.com/linkedin-342f8fb08d085d6a5e9c2a59bbc55f88.svg" />
+      </a>
+      <a href="https://www.youtube.com/@Fynzgroup" target="_blank" class="part_footer_social_icon">
+        <img alt="youtube" src="//s3.amazonaws.com/edge-assets.lemonade.com/youtube-2e6dec23b425462cd8e6efe5c297fe9f.svg" />
+      </a>
+      <a href="https://www.tiktok.com/@fynzgroup" target="_blank" class="part_footer_social_icon">
+        <img alt="tiktok" src="//s3.amazonaws.com/edge-assets.lemonade.com/tiktok-07abe2bb630f815692c89ba65afc847b.svg" />
+      </a>
+    </div>
+  </div>
+
+  <div class="part_footer_bottom">
+    &copy; 2025 Fynz. Todos os direitos reservados.
+  </div>
+
+  <style>
 .btn-whatsapp-pulse {
   background: #25d366;
   color: white;
@@ -457,6 +1413,7 @@
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
   animation-iteration-count: infinite;
+  z-index: 20;
 }
 
 @keyframes pulse {
@@ -505,205 +1462,221 @@
 }
 </style>
 
-<a href="" class="btn-whatsapp-pulse">
+<a href="https://wa.me/5511970817031" class="btn-whatsapp-pulse" target="_blank">
   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 24 24">
-    <path
-      d="M12.04 2.003c-5.51 0-9.96 4.453-9.96 9.97 0 1.757.46 3.468 1.34 4.97L2 22l5.207-1.36c1.442.786 3.058 1.196 4.833 1.196h.001c5.51 0 9.96-4.453 9.96-9.97s-4.45-9.97-9.96-9.97zm0 18.12c-1.52 0-2.974-.4-4.26-1.157l-.305-.18-3.09.8.825-3.01-.197-.31c-.834-1.312-1.273-2.833-1.273-4.4 0-4.547 3.698-8.25 8.25-8.25s8.25 3.703 8.25 8.25c0 4.547-3.698 8.25-8.25 8.25zm4.547-6.197c-.25-.125-1.477-.727-1.706-.81-.228-.084-.395-.125-.563.125s-.645.81-.79.977c-.146.167-.292.188-.542.063-.25-.125-1.056-.388-2.01-1.237-.742-.66-1.243-1.473-1.388-1.723-.146-.25-.015-.385.11-.51.113-.113.25-.292.375-.438.125-.145.167-.25.25-.417.084-.167.042-.313-.021-.438-.063-.125-.563-1.36-.77-1.867-.204-.49-.41-.417-.563-.427l-.48-.01c-.167 0-.437.063-.667.313s-.875.855-.875 2.083c0 1.229.896 2.417 1.02 2.583.125.167 1.76 2.69 4.27 3.77.597.257 1.063.41 1.426.522.598.19 1.144.167 1.573.102.48-.072 1.477-.604 1.686-1.188.208-.583.208-1.083.146-1.188-.063-.104-.229-.167-.48-.292z" />
+    <path d="M12.04 2.003c-5.51 0-9.96 4.453-9.96 9.97 0 1.757.46 3.468 1.34 4.97L2 22l5.207-1.36c1.442.786 3.058 1.196 4.833 1.196h.001c5.51 0 9.96-4.453 9.96-9.97s-4.45-9.97-9.96-9.97zm0 18.12c-1.52 0-2.974-.4-4.26-1.157l-.305-.18-3.09.8.825-3.01-.197-.31c-.834-1.312-1.273-2.833-1.273-4.4 0-4.547 3.698-8.25 8.25-8.25s8.25 3.703 8.25 8.25c0 4.547-3.698 8.25-8.25 8.25zm4.547-6.197c-.25-.125-1.477-.727-1.706-.81-.228-.084-.395-.125-.563.125s-.645.81-.79.977c-.146.167-.292.188-.542.063-.25-.125-1.056-.388-2.01-1.237-.742-.66-1.243-1.473-1.388-1.723-.146-.25-.015-.385.11-.51.113-.113.25-.292.375-.438.125-.145.167-.25.25-.417.084-.167.042-.313-.021-.438-.063-.125-.563-1.36-.77-1.867-.204-.49-.41-.417-.563-.427l-.48-.01c-.167 0-.437.063-.667.313s-.875.855-.875 2.083c0 1.229.896 2.417 1.02 2.583.125.167 1.76 2.69 4.27 3.77.597.257 1.063.41 1.426.522.598.19 1.144.167 1.573.102.48-.072 1.477-.604 1.686-1.188.208-.583.208-1.083.146-1.188-.063-.104-.229-.167-.48-.292z" />
   </svg>
-</a>
+</a></footer>
 
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-    <script src="./assets/js/global.js"></script>
+<script>
+AOS.init({
+  once: false
+});
+</script>
 
-    
-    <script>
-      AOS.init({ once: false });
+<style>
+.part_footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 0 40px;
+  font-size: 14px;
+}
 
-      document.addEventListener('DOMContentLoaded', function () {
-        const feedbacks = [
-          {
-            name: "Sofia Alves",
-            username: "@sofia_alves_",
-            photoUrl: "https://randomuser.me/api/portraits/women/11.jpg",
-            text: "Nunca pensei que entender de seguros seria tão fácil! A <span class='primary'>Fynz</span> realmente cumpre o que promete: simplicidade e clareza. Amei!"
-          },
-          {
-            name: "Lucas Pereira",
-            username: "@lucas_p_tech",
-            photoUrl: "https://randomuser.me/api/portraits/men/12.jpg",
-            text: "Revisar meu seguro com a <span class='primary'>Fynz</span> foi a melhor decisão. Descobri que pagava mais por menos. Agora estou super bem protegido e economizando! #Fynz"
-          },
-          {
-            name: "Camila Mendes",
-            username: "@cami_mendes",
-            photoUrl: "https://randomuser.me/api/portraits/women/13.jpg",
-            text: "O atendimento do especialista da <span class='primary'>Fynz</span> foi impecável. Tirou todas as minhas dúvidas sobre plano de saúde. Sinto que fiz a escolha certa para minha família."
-          },
-          {
-            name: "Diego Farias",
-            username: "@diego_farias_eng",
-            photoUrl: "https://randomuser.me/api/portraits/men/14.jpg",
-            text: "A transparência da <span class='primary'>Fynz</span> é algo raro no mercado. Me ajudaram a entender o consórcio sem pressão para fechar. Recomendo para quem busca honestidade."
-          },
-          {
-            name: "Patrícia Lima",
-            username: "@patricia_lima",
-            photoUrl: "https://randomuser.me/api/portraits/women/15.jpg",
-            text: "Minha vida mudou e meu seguro precisava acompanhar. A <span class='primary'>Fynz</span> me mostrou o quanto era importante atualizar. Processo rápido e sem burocracia."
-          },
-          {
-            name: "Gustavo Rocha",
-            username: "@guga_rocha",
-            photoUrl: "https://randomuser.me/api/portraits/men/16.jpg",
-            text: "A plataforma da <span class='primary'>Fynz</span> é sensacional para comparar seguros. Sem viés, sem pressão, só informações claras para eu decidir. Parabéns pela iniciativa!"
-          },
-          {
-            name: "Débora Costa",
-            username: "@deb_costa",
-            photoUrl: "https://randomuser.me/api/portraits/women/17.jpg",
-            text: "Nunca me senti tão segura ao contratar um seguro. A <span class='primary'>Fynz</span> me deu todo o conhecimento necessário. Recomendo para todos que buscam tranquilidade e informação."
-          },
-          {
-            name: "Rafael Menezes",
-            username: "@rafa_menezes_rj",
-            photoUrl: "https://randomuser.me/api/portraits/men/18.jpg",
-            text: "A Fynz é o futuro dos seguros. Sem letras miúdas, sem surpresas. Meu seguro de responsabilidade civil foi super bem explicado, agora sei o que estou contratando."
-          },
-          {
-            name: "Carla Oliveira",
-            username: "@carla_oli",
-            photoUrl: "https://randomuser.me/api/portraits/women/19.jpg",
-            text: "A revisão do meu seguro com a <span class='primary'>Fynz</span> revelou várias lacunas que eu nem imaginava. Agora tenho uma apólice que realmente me protege. Essencial!"
-          },
-          {
-            name: "Felipe Nunes",
-            username: "@felipe_nunes_",
-            photoUrl: "https://randomuser.me/api/portraits/men/20.jpg",
-            text: "Simples, direto e do seu jeito. A <span class='primary'>Fynz</span> realmente entrega essa promessa. Contratar seguro ficou fácil de verdade! #ProtecaoFynz"
-          }
-        ];
+.part_footer_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
 
-        const products = [
-          {
-            name: " Vida",
-            description: "Mais do que deixar algo pra alguém. É garantir que nada te pare.",
-            img: "health-svgrepo-com.svg",
-            link: "/onboarding/start?p=home_us_vida"
-          },
-          {
-            name: "Plano de Saúde",
-            description: "Cuidar da saúde é o novo relacionamento sério.",
-            img: "checkup-doctor-health-healthcare-hospital-medical-svgrepo-com.svg",
-            link: "/onboarding/start?p=home_us_plano_saude"
-          },
-          {
-            name: "Consórcio",
-            description: "Nem tudo precisa ser agora. Mas precisa ser possível.",
-            img: "deal-done-partnership-agreement-svgrepo-com.svg",
-            link: "/onboarding/start?p=home_us_consorcio"
-          },
-          {
-            name: "Responsabilidade Civil",
-            description: "A justiça não vê só o que foi feito. Ela considera o que foi sentido.",
-            img: "insurance-protection-safety-svgrepo-com.svg",
-            link: "/onboarding/start?p=home_us_responsabilidade_civil"
-          },
-          {
-            name: "Outros",
-            description: "Se é importante para você, a gente protege. E sem complicar.",
-            img: "car-svgrepo-com.svg",
-            link: "/onboarding/start?p=home_us_responsabilidade_civil"
-          },
-        ];
+.part_footer_section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
 
-        const targetElement = document.querySelector('.sc-55636dc4-2');
-        const productList = document.querySelector('#lista-produto');
+.part_footer_section:last-child {
+  margin-right: 0;
+}
 
-        // Add feedbacks with AOS animation
-        [...feedbacks, ...feedbacks].forEach((feedback, index) => {
-          const feedbackDiv = document.createElement('div');
-          feedbackDiv.innerHTML = `
-            <div class="sc-dlfnbm sc-hKgILt sc-929dd2a3-0 eHArZT oXQDT gUWSMH tweet-card ">
-              <div class="sc-dlfnbm sc-hKgILt cWMrUO dkJMFH">
+.part_footer_title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.part_footer_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.part_footer_list_item {
+  margin-bottom: 10px;
+}
+
+.part_footer_list_item a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: #b7b7b7;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  font-weight: var(--main-font-weight);
+}
+
+.part_footer_list_item a:hover {
+  color: #cccccc;
+}
+
+.part_footer_contact_info {
+  margin-bottom: 10px;
+}
+
+.part_footer_social_icons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.part_footer_social_icon {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.part_footer_social_icon:hover {
+  color: #cccccc;
+}
+
+.part_footer_bottom {
+  border-top: 1px solid #333333;
+  padding-top: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .part_footer_container {
+    flex-direction: column;
+  }
+
+  .part_footer_section {
+    margin-bottom: 30px;
+  }
+}
+</style>      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+  <script>
+    AOS.init({ once: false });
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+      const products = [{
+          name: " Vida",
+          description: "Mais do que deixar algo pra alguém. É garantir que nada te pare.",
+          img: "health-svgrepo-com.svg",
+          link: "/onboarding/start?p=home_us_vida"
+        },
+        {
+          name: "Plano de Saúde",
+          description: "Cuidar da saúde é o novo relacionamento sério.",
+          img: "checkup-doctor-health-healthcare-hospital-medical-svgrepo-com.svg",
+          link: "/onboarding/start?p=home_us_plano_saude"
+        },
+        {
+          name: "Consórcio",
+          description: "Nem tudo precisa ser agora. Mas precisa ser possível.",
+          img: "deal-done-partnership-agreement-svgrepo-com.svg",
+          link: "/onboarding/start?p=home_us_consorcio"
+        },
+        {
+          name: "Responsabilidade Civil",
+          description: "A justiça não vê só o que foi feito. Ela considera o que foi sentido.",
+          img: "insurance-protection-safety-svgrepo-com.svg",
+          link: "/onboarding/start?p=home_us_responsabilidade_civil"
+        },
+        {
+          name: "Outros",
+          description: "Se é importante para você, a gente protege. E sem complicar.",
+          img: "car-svgrepo-com.svg",
+          link: "/onboarding/start?p=home_us_responsabilidade_civil"
+        },
+      ];
+
+      const targetElement = document.querySelector('.sc-55636dc4-2');
+      const productList = document.querySelector('#lista-produto');
+
+      // Add products with AOS animation
+      if (productList) {
+        products.forEach((product, index) => {
+          const productItem = document.createElement('li');
+          productItem.setAttribute('style', 'justify-content: space-between;');
+          productItem.setAttribute('tabindex', '0');
+          productItem.classList.add('sc-dlfnbm', 'sc-hKgILt', 'sc-e3cf1f21-0', 'cWMrUO', 'chrFRT', 'hDRqOu');
+          productItem.setAttribute('data-aos', 'fade-up');
+          productItem.setAttribute('data-aos-delay', (index * 200).toString());
+          productItem.innerHTML = `
                 <img
-                  alt="${feedback.name}" loading="lazy" width="100" height="100" decoding="async"
-                  class="sc-929dd2a3-1 gMrLqq"
-                  src="${feedback.photoUrl}"
+                  aria-hidden="true"
+                  alt="${product.name}"
+                  loading="lazy"
+                  width="150"
+                  height="150"
+                  decoding="async"
+                  data-nimg="1"
+                  class="sc-3524474a-2 hOVqDd"
+                  style="color: transparent; filter: grayscale(100%);"
+                  src="http://localhost/wp-content/themes/fynz/assets/img/${product.img}"
                 />
-                <div class="sc-dlfnbm sc-hKgILt ktyKdC dfPQcU">
-                  <p class="sc-929dd2a3-2 fpqtPF">${feedback.name}</p>
-                  <p class="sc-929dd2a3-3 fPFuRr">${feedback.username}</p>
-                </div>
-              </div>
-                <p class="sc-929dd2a3-4 gFsfCu">${feedback.text}</p>
-            </div>
-          `;
-          targetElement.appendChild(feedbackDiv);
-        });
-
-        // Add products with AOS animation
-        if (productList) {
-          products.forEach((product, index) => {
-            const productItem = document.createElement('li');
-            productItem.setAttribute('style', 'justify-content: space-between;');
-            productItem.setAttribute('tabindex', '0');
-            productItem.classList.add('sc-dlfnbm', 'sc-hKgILt', 'sc-e3cf1f21-0', 'cWMrUO', 'chrFRT', 'hDRqOu');
-            productItem.setAttribute('data-aos', 'fade-up');
-            productItem.setAttribute('data-aos-delay', (index * 200).toString()); 
-            productItem.innerHTML = `
-              <img
-                aria-hidden="true"
-                alt="${product.name}"
-                loading="lazy"
-                width="150"
-                height="150"
-                decoding="async"
-                data-nimg="1"
-                class="sc-3524474a-2 hOVqDd"
-                style="color: transparent; filter: grayscale(100%);"
-                src="./assets/img/${product.img}"
-              />
-              <img
-                aria-hidden="true"
-                alt="${product.name}"
-                loading="lazy"
-                width="106"
-                height="106"
-                decoding="async"
-                data-nimg="1"
-                class="sc-3524474a-3 cexTqw"
-                style="color: transparent; filter: grayscale(100%);"
-                src="./assets/img/${product.img}"
-              />
-              <span class="sc-e3cf1f21-3 sc-3524474a-0 iucpwW fWQlyv">${product.name}</span>
-              <span class="sc-e3cf1f21-4 sc-3524474a-1 jtIOEh msOlO">
-                ${product.description.replace(/\n/g, '<br />')}
-              </span>
-              <span class="sc-3524474a-4 hWsqzn">
-                <span display="none,block" class="sc-dlfnbm sc-3524474a-5 bSTlr">
-                  <a href="${product.link}" class="sc-jNMdTA sc-d98de5f3-0 ucyLk iTsFZR sc-e3cf1f21-6 gxDWLU">
-                    Saiba Mais
-                  </a>
+                <img
+                  aria-hidden="true"
+                  alt="${product.name}"
+                  loading="lazy"
+                  width="106"
+                  height="106"
+                  decoding="async"
+                  data-nimg="1"
+                  class="sc-3524474a-3 cexTqw"
+                  style="color: transparent; filter: grayscale(100%);"
+                  src="http://localhost/wp-content/themes/fynz/assets/img/${product.img}"
+                />
+                <span class="sc-e3cf1f21-3 sc-3524474a-0 iucpwW fWQlyv">${product.name}</span>
+                <span class="sc-e3cf1f21-4 sc-3524474a-1 jtIOEh msOlO">
+                  ${product.description.replace(/\n/g, '<br />')}
                 </span>
-              </span>
-            `;
-            productList.appendChild(productItem);
-          });
-        }
-      });
-
-      // Animação
-      const bird = document.getElementById('bird-fly-animation');
-
-      function setRandomTop() {
-        const min = 50; 
-        const max = window.innerHeight - 150; 
-        const randomTop = Math.floor(Math.random() * (max - min + 1)) + min;
-        bird.style.top = randomTop + 'px';
+                <span class="sc-3524474a-4 hWsqzn">
+                  <span display="none,block" class="sc-dlfnbm sc-3524474a-5 bSTlr">
+                    <a href="${product.link}" class="sc-jNMdTA sc-d98de5f3-0 ucyLk iTsFZR sc-e3cf1f21-6 gxDWLU">
+                      Saiba Mais
+                    </a>
+                  </span>
+                </span>
+              `;
+          productList.appendChild(productItem);
+        });
       }
+    });
 
-      bird.addEventListener('animationiteration', setRandomTop);
-      setRandomTop();
-    </script>
-  </body>
+    // Animação
+    const bird = document.getElementById('bird-fly-animation');
+
+    function setRandomTop() {
+      const min = 50; // altura mínima
+      const max = window.innerHeight - 150; // evita sair da tela
+      const randomTop = Math.floor(Math.random() * (max - min + 1)) + min;
+      bird.style.top = randomTop + 'px';
+    }
+
+    bird.addEventListener('animationiteration', setRandomTop);
+    setRandomTop();
+  </script>
+</body>
+
 </html>

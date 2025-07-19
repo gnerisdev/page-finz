@@ -1,0 +1,573 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="Referrer" content="origin" />
+  <meta name="google" content="notranslate" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="orientation" content="portrait" />
+  <title>Fynz | Fale Conosco</title>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="stylesheet" href="http://localhost/wp-content/themes/fynz/assets/css/fale-conosco.css" />
+</head>
+
+<body style="overflow-x: hidden;">
+  <header class="part-header">
+  <div class="part-header__icon-menu" onclick="toggleMenu()">
+    <svg height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg" class="sc-lbNHPp gSVqtQ">
+      <path d="M2 4H18" stroke="#4a4a4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+      <path d="M2 10H18" stroke="#4a4a4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+      <path d="M2 16H18" stroke="#4a4a4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+    </svg>
+  </div>
+
+  <nav class="part-header__nav">
+    <div class="part-header__close" onclick="toggleMenu()">
+      <svg width="34px" height="34px" viewBox="0 0 25.00 25.00" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 22.4199C17.5228 22.4199 22 17.9428 22 12.4199C22 6.89707 17.5228 2.41992 12 2.41992C6.47715 2.41992 2 6.89707 2 12.4199C2 17.9428 6.47715 22.4199 12 22.4199Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M13.4102 16.4199L10.3502 13.55C10.1944 13.4059 10.0702 13.2311 9.98526 13.0366C9.9003 12.8422 9.85645 12.6321 9.85645 12.4199C9.85645 12.2077 9.9003 11.9979 9.98526 11.8035C10.0702 11.609 10.1944 11.4342 10.3502 11.29L13.4102 8.41992" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+    </div>
+
+    <a href="/seguro-de-vida" class="part-header__link">Vida</a>
+    <a href="/plano-de-saude" class="part-header__link">Plano de Saúde</a>
+    <a href="/consorcio" class="part-header__link">Consórcio</a>
+    <a href="/responsabilidade-civil" class="part-header__link">Responsabilidade Civil</a>
+    <a href="/seguro-auto" class="part-header__link">Outros</a>
+    <a class="part-header__button" href="/sobre">Sobre nós</a>
+  </nav>
+
+  <div class="part-header__nav__background" aria-hidden="true"></div>
+
+  <div class="part-header__right">
+    <a class="part-header__button" href="/sobre">Sobre nós</a>
+    <img 
+      src="http://localhost/wp-content/themes/fynz/assets/img/logo-fynz-02.png" 
+      class="part-header__logo" 
+      alt="Logo Fynz" 
+    />
+  </div>
+</header>
+
+<script>
+  // Menu Hamburguer
+  function toggleMenu() {
+    document.querySelector('.part-header__nav').classList.toggle('active');
+    document.querySelector('.part-header__nav__background').classList.toggle('active');
+  }
+
+  // Scroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 90) {
+      document.body.classList.add('custom-scroll');
+    } else {
+      document.body.classList.remove('custom-scroll');
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Cor logo
+    const logo = document.querySelector(".part-header__logo");
+    const isHomePage = window.location.pathname === "/" || window.location.pathname === "/index.html";
+    if (!isHomePage) logo.style.filter = "grayscale(100%) contrast(200%)";
+  });
+</script>
+
+<style>
+  .part-header {
+    height: 68px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+  }
+
+  .custom-scroll .part-header {
+    border: 1px solid rgb(218, 218, 218);
+  }
+
+  .part-header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    z-index: 20;
+  } 
+  @media (max-width: 1050px) {
+    .part-header__nav {
+      position: absolute;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 100vh;
+      width: 80%;
+      max-width: 240px;
+      top: -1px;
+      left: -1000px;
+      background: #fff;
+    } 
+
+    .part-header__nav.active {
+      left: -1px;
+      transition: left 0.5s ease-in-out;
+    }
+
+    .part-header__link {
+      padding: 4px 24px;
+    }
+  }
+
+  .part-header__nav .part-header__button {
+    display: none;
+  } 
+  @media (max-width: 1050px) {
+    .part-header__nav .part-header__button {
+      display: flex;
+      position: absolute;
+      bottom: 12px;
+      left: 24px;
+    } 
+  }
+
+  .part-header__close {
+    height: 68px;
+    background-color: #2d7dc3;
+    color: #fff;
+    width: 100%;
+    display: none;
+  }
+  @media (max-width: 1050px) {
+    .part-header__close {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } 
+  }
+
+  .part-header__icon-menu {
+    display: none;
+    cursor: pointer;
+  }
+  @media (max-width: 1050px) {
+    .part-header__icon-menu {
+      display: block;
+    } 
+  }
+
+  .part-header__link {
+    margin: 0px;
+    color: rgb(74, 74, 74);
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height);
+    font-weight: var(--main-font-weight);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .part-header__right {
+    display: flex;
+    gap: 12px;
+  }
+
+  .part-header__button {
+    width: fit-content;
+    height: 38px;
+    padding: 8px 12px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #2d7dc3;
+    border: 1px solid transparent;
+    font-family: var(--main-font-family);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    .part-header__button {
+      display: none;
+    } 
+  }
+
+  .part-header__nav__background {
+    display: none;
+  }
+
+  @media (max-width: 1050px) {
+    .active.part-header__nav__background {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9;
+      display: block;
+    }
+  }
+
+  .part-header__logo {
+    height: 34px;
+    display: none;
+  }
+  @media (max-width: 1050px) {
+    .part-header__logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    } 
+  }
+
+  .custom-scroll .part-header__logo {
+    display: block;
+  }
+</style>
+  <section class="section-hero">
+    <div class="section-hero__logo">
+      <img src="http://localhost/wp-content/themes/fynz/assets/img/logo-fynz-03.png">
+    </div>
+
+    <div class="form-container">
+      <h2>Fale Conosco</h2>
+
+      <form action="" method="post">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone com DDD:</label>
+          <input type="text" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Quais Seguros você tem interesse?</label>
+          <div class="multiselect-dropdown">
+            <div class="multiselect-select-box" onclick="showCheckboxes()">
+              <select id="seguros-select" name="seguros-placeholder" disabled>
+                <option value="">Selecione um ou mais seguros</option>
+              </select>
+              <div class="overselect"></div>
+            </div>
+            <div id="seguros-checkboxes" class="multiselect-checkboxes">
+              <label>
+                <input type="checkbox" name="seguros[]" value="Vida"> Vida
+              </label>
+              <label>
+                <input type="checkbox" name="seguros[]" value="Plano de Saúde"> Plano de Saúde
+              </label>
+              <label>
+                <input type="checkbox" name="seguros[]" value="Consórcio"> Consórcio
+              </label>
+              <label>
+                <input type="checkbox" name="seguros[]" value="Responsabilidade Civil"> Responsabilidade Civil
+              </label>
+              <label>
+                <input type="checkbox" name="seguros[]" value="Outros"> Outros
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="desejo">Qual seu desejo?</label>
+          <select id="desejo" name="desejo" required>
+            <option value="">Selecione uma opção</option>
+            <option value="melhorar_preco">Melhorar preço</option>
+            <option value="melhor_orientacao">Quero ser melhor orientado</option>
+            <option value="seguro_bom">Meu seguro está bom?</option>
+            <option value="bem_social">Quero meu seguro fazendo um bem social</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <img 
+      src="http://localhost/wp-content/themes/fynz/assets/img/background-city.svg" 
+      class="section-hero__background"
+    >
+  </section>
+
+  <footer class="part_footer">
+  <div class="part_footer_container">
+    <div class="part_footer_section">
+      <div class="part_footer_title">PRODUTOS:</div>
+      <ul class="part_footer_list">
+        <li class="part_footer_list_item"><a href="/seguro-de-vida">Vida</a></li>
+        <li class="part_footer_list_item"><a href="/plano-de-saude">Plano de Saúde</a></li>
+        <li class="part_footer_list_item"><a href="/consorcio">Consórcio</a></li>
+        <li class="part_footer_list_item"><a href="/responsabilidade-civil">Responsabilidade Civil</a></li>
+        <li class="part_footer_list_item"><a href="/outros">Outros</a></li>
+      </ul>
+    </div>
+
+    <div class="part_footer_section">
+      <div class="part_footer_title">EMPRESA:</div>
+      <ul class="part_footer_list">
+        <li class="part_footer_list_item"><a href="/sobre">Sobre Nós</a></li>
+        <li class="part_footer_list_item"><a href="#">LGPD</a></li>
+        <li class="part_footer_list_item"><a href="#">Política de Cookies</a></li>
+        <li class="part_footer_list_item"><a href="#">Política de Privacidade</a></li>
+      </ul>
+    </div>
+
+    <div class="part_footer_section">
+      <div class="part_footer_title">CONTATO:</div>
+      <ul class="part_footer_list">
+        <li class="part_footer_list_item"><a href="#">(11) 9999-9999</a></li>
+        <li class="part_footer_list_item"><a href="#">contato@fynz.com.br</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="part_footer_container">
+    <div class="part_footer_social_icons">
+      <a href="https://www.facebook.com.br/fynzgroup" target="_blank" class="part_footer_social_icon">
+        <img alt="facebook" src="//s3.amazonaws.com/edge-assets.lemonade.com/facebook-0ef4315d24cb5fda4c744e8e33ad179e.svg" />
+      </a>
+      <a href="https://www.instagram.com/fynzgroup/" target="_blank" class="part_footer_social_icon">
+        <img alt="instagram" src="//s3.amazonaws.com/edge-assets.lemonade.com/instagram-9f32af78f7c0d9c0fa415fa485349653.svg" />
+      </a>
+      <a href="https://www.linkedin.com/company/fynz" target="_blank" class="part_footer_social_icon">
+        <img alt="linkedin" src="//s3.amazonaws.com/edge-assets.lemonade.com/linkedin-342f8fb08d085d6a5e9c2a59bbc55f88.svg" />
+      </a>
+      <a href="https://www.youtube.com/@Fynzgroup" target="_blank" class="part_footer_social_icon">
+        <img alt="youtube" src="//s3.amazonaws.com/edge-assets.lemonade.com/youtube-2e6dec23b425462cd8e6efe5c297fe9f.svg" />
+      </a>
+      <a href="https://www.tiktok.com/@fynzgroup" target="_blank" class="part_footer_social_icon">
+        <img alt="tiktok" src="//s3.amazonaws.com/edge-assets.lemonade.com/tiktok-07abe2bb630f815692c89ba65afc847b.svg" />
+      </a>
+    </div>
+  </div>
+
+  <div class="part_footer_bottom">
+    &copy; 2025 Fynz. Todos os direitos reservados.
+  </div>
+
+  <style>
+.btn-whatsapp-pulse {
+  background: #25d366;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  border-radius: 50%;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  z-index: 20;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+
+  80% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+}
+
+.btn-whatsapp-pulse-border {
+  bottom: 120px;
+  right: 20px;
+  animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  padding: 25px;
+  border: 5px solid #25d366;
+  opacity: 0.75;
+  animation-name: pulse-border;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+  0% {
+    padding: 25px;
+    opacity: 0.75;
+  }
+
+  75% {
+    padding: 50px;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+</style>
+
+<a href="https://wa.me/5511970817031" class="btn-whatsapp-pulse" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 24 24">
+    <path d="M12.04 2.003c-5.51 0-9.96 4.453-9.96 9.97 0 1.757.46 3.468 1.34 4.97L2 22l5.207-1.36c1.442.786 3.058 1.196 4.833 1.196h.001c5.51 0 9.96-4.453 9.96-9.97s-4.45-9.97-9.96-9.97zm0 18.12c-1.52 0-2.974-.4-4.26-1.157l-.305-.18-3.09.8.825-3.01-.197-.31c-.834-1.312-1.273-2.833-1.273-4.4 0-4.547 3.698-8.25 8.25-8.25s8.25 3.703 8.25 8.25c0 4.547-3.698 8.25-8.25 8.25zm4.547-6.197c-.25-.125-1.477-.727-1.706-.81-.228-.084-.395-.125-.563.125s-.645.81-.79.977c-.146.167-.292.188-.542.063-.25-.125-1.056-.388-2.01-1.237-.742-.66-1.243-1.473-1.388-1.723-.146-.25-.015-.385.11-.51.113-.113.25-.292.375-.438.125-.145.167-.25.25-.417.084-.167.042-.313-.021-.438-.063-.125-.563-1.36-.77-1.867-.204-.49-.41-.417-.563-.427l-.48-.01c-.167 0-.437.063-.667.313s-.875.855-.875 2.083c0 1.229.896 2.417 1.02 2.583.125.167 1.76 2.69 4.27 3.77.597.257 1.063.41 1.426.522.598.19 1.144.167 1.573.102.48-.072 1.477-.604 1.686-1.188.208-.583.208-1.083.146-1.188-.063-.104-.229-.167-.48-.292z" />
+  </svg>
+</a></footer>
+
+<script>
+AOS.init({
+  once: false
+});
+</script>
+
+<style>
+.part_footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 0 40px;
+  font-size: 14px;
+}
+
+.part_footer_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.part_footer_section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+
+.part_footer_section:last-child {
+  margin-right: 0;
+}
+
+.part_footer_title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.part_footer_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.part_footer_list_item {
+  margin-bottom: 10px;
+}
+
+.part_footer_list_item a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: #b7b7b7;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  font-weight: var(--main-font-weight);
+}
+
+.part_footer_list_item a:hover {
+  color: #cccccc;
+}
+
+.part_footer_contact_info {
+  margin-bottom: 10px;
+}
+
+.part_footer_social_icons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.part_footer_social_icon {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.part_footer_social_icon:hover {
+  color: #cccccc;
+}
+
+.part_footer_bottom {
+  border-top: 1px solid #333333;
+  padding-top: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .part_footer_container {
+    flex-direction: column;
+  }
+
+  .part_footer_section {
+    margin-bottom: 30px;
+  }
+}
+</style>
+  <script>
+  AOS.init();
+
+  var expanded = false;
+
+  function showCheckboxes() {
+    var checkboxes = document.getElementById("seguros-checkboxes");
+    if (!expanded) {
+      checkboxes.style.display = "block";
+      expanded = true;
+    } else {
+      checkboxes.style.display = "none";
+      expanded = false;
+    }
+  }
+
+  document.addEventListener('click', function(event) {
+    var multiselectDropdown = document.querySelector('.multiselect-dropdown');
+    if (expanded && !multiselectDropdown.contains(event.target)) {
+      document.getElementById("seguros-checkboxes").style.display = "none";
+      expanded = false;
+    }
+  });
+  </script>
+
+</body>
+
+</html>
